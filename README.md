@@ -8,7 +8,7 @@ you can access your applucation on LB, but it will redirect to only root or / ap
 
 So in order to access and test all the path based routing are working , you can alternatively use node port
 
-http://<ip of worker node>:<node port>/path
+http://ip of worker node:<node port>/path
 
 You can get the nodeport using  command : kubectl get svc -n=ingress-nginx
 
