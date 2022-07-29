@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: connectivity-deployment
+  labels:
+    app: connectedcity
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: connectedcity
+  template:
+    metadata:
+      labels:
+        app: connectedcity
+    spec:
+      containers:
+      - name: nginx
+        image: kunchalavikram/hello-flask:v1
+        ports:
+        - containerPort: 5000
+
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: connectedcity-service
+spec:
+  selector:
+    app: connectedcity-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: connectedfactory
+  labels:
+    app: connectedfactory
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: connectedfactory
+  template:
+    metadata:
+      labels:
+        app: connectedfactory
+    spec:
+      containers:
+      - name: nginx
+        image: kunchalavikram/connectedfactory:v1
+        ports:
+        - containerPort: 5000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: connectedfactory-service
+spec:
+  selector:
+    app: connectedfactory
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
