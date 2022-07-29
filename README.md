@@ -15,3 +15,8 @@ You can get the nodeport using  command : kubectl get svc -n=ingress-nginx
 Ingress Design from K8s IO:
 
 ![image](https://user-images.githubusercontent.com/72337263/181738604-9f28b4f6-5f8a-4e12-83ce-8c62eb374a8d.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/72337263/181754114-6ddf1cbe-70cc-48be-88a2-6969adfd8a87.png)
