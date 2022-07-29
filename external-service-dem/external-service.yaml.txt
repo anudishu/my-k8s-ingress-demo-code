@@ -1,0 +1,24 @@
+#external service and Endpoints
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-backend
+spec:
+ ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
+
+
+---
+
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: flask-backend
+subsets:
+    -addresses:
+     -ip:104.197.206.204
+  ports:
+   - port: 5000

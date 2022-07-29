@@ -1,0 +1,38 @@
+##multi-container
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multicontainer-pod
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+  - name: flask
+    image: kunchalavikram/hello-flask:v1
+
+    ports:
+    - containerPort: 5000
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-dualservice
+spec:
+  type: NodePort
+  selector:
+    app: myapp
+  ports:
+    - name: nginx
+      protocol: TCP
+      port: 80
+      targetPort: 80
+    - name: flask
+      protocol: TCP
+      port: 81
+      targetPort: 5000
