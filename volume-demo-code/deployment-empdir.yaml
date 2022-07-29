@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: k8s-emptydir
+  name: k8s-emptydir
+spec:
+  selector:
+    matchLabels:
+      app: k8s-emptydir
+  template:
+    metadata:
+      labels:
+        app: k8s-emptydir
+    spec:
+      containers:
+        - image: nginx
+          imagePullPolicy: IfNotPresent
+          name: consumer
+          ports:
+          - containerPort: 8080
+            name: http
+            protocol: TCP
+          volumeMounts:
+            - mountPath: /static
+              name: exchange
+        - image: nginx
+          imagePullPolicy: IfNotPresent
+          name: producer
+          volumeMounts:
+            - mountPath: /static
+              name: exchange
+      volumes:
+        - name: exchange
+          emptyDir: {}
