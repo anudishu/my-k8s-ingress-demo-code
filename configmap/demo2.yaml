@@ -1,0 +1,27 @@
+## Please run this command before you run this pod yaml
+#$ kubectl create configmap app-config --from-literal=BACKGROUND_COLOR=Red --from-literal=TEXT_COLOR=green
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busy-box-1
+  labels:
+    app: busy-box
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    command: ["/bin/echo","$(BACKGROUND_COLOR) $(TEXT_COLOR)"]
+    env:
+    - name: BACKGROUND_COLOR 
+      valueFrom:
+        configMapKeyRef:
+         name: app-config
+         key:  BACKGROUND_COLOR 
+    - name: TEXT_COLOR 
+      valueFrom:
+        configMapKeyRef:
+         name: app-config
+         key: TEXT_COLOR            
+  restartPolicy: Never  

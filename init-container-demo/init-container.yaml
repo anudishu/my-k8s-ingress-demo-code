@@ -12,7 +12,7 @@ spec:
       - git
       - clone
       - https://github.com/kunchalavikram1427/simple-html-page.git
-      - "/tmp"
+      - /tmp
      volumeMounts:
       - name: scratch
         mountPath: "/tmp"
