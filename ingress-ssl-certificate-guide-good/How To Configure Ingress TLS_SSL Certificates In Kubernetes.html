@@ -1,0 +1,1538 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8" /><script src="/cdn-cgi/apps/head/69-eXSjJiSd7ut7rXz3zy-PAFCg.js"></script><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+
+<title>How To Configure Ingress TLS/SSL Certificates In Kubernetes</title><style id="rocket-critical-css">@font-face{font-family:powerkit-icons;src:url(https://devopscube.com/wp-content/plugins/powerkit/assets/fonts/powerkit-icons.woff) format("woff"),url(https://devopscube.com/wp-content/plugins/powerkit/assets/fonts/powerkit-icons.ttf) format("truetype"),url(https://devopscube.com/wp-content/plugins/powerkit/assets/fonts/powerkit-icons.svg) format("svg");font-weight:400;font-style:normal;font-display:swap}[class*=" pk-icon-"]{font-family:powerkit-icons!important;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.pk-icon-up:before{content:"\e908"}.pk-font-primary{--pk-primary-font-weight:700;font-weight:var(--pk-primary-font-weight)}.pk-font-secondary{--pk-secondary-font-size:80%;--pk-secondary-font-color:#6c757d;font-size:var(--pk-secondary-font-size);color:var(--pk-secondary-font-color)}h1,h5{overflow-wrap:break-word}.wp-block-image{margin:0 0 1em}.wp-block-image img{vertical-align:bottom}.wp-block-image:not(.is-style-rounded)>a,.wp-block-image:not(.is-style-rounded) img{border-radius:inherit}ul{overflow-wrap:break-word}p{overflow-wrap:break-word}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}@font-face{font-family:advanced-popups-icons;src:url(https://devopscube.com/wp-content/plugins/advanced-popups/fonts/advanced-popups-icons.woff) format("woff"),url(https://devopscube.com/wp-content/plugins/advanced-popups/fonts/advanced-popups-icons.ttf) format("truetype"),url(https://devopscube.com/wp-content/plugins/advanced-popups/fonts/advanced-popups-icons.svg) format("svg");font-weight:400;font-style:normal;font-display:swap}.adp-popup{--adp-popup-wrap-scrollbar-width:0.625rem;--adp-popup-wrap-scrollbar-track-background:#f1f1f1;--adp-popup-wrap-scrollbar-thumb-background:#888;--adp-popup-wrap-scrollbar-thumb-hover-background:#555;--adp-popup-wrap-box-shadow:0 0 40px 0 rgba(0,0,0,.075);--adp-popup-container-background:#FFFFFF;--adp-popup-close-font-size:1.25rem;--adp-popup-close-color:#000;--adp-popup-close-hover-color:#777;--adp-popup-close-light-color:#FFFF;--adp-popup-close-light-hover-color:rgba(255,255,255,0.75);--adp-popup-type-content-close-font-size:1.5rem;--adp-popup-type-notification-text-font-size:90%;--adp-popup-type-notification-text-color:#777777;--adp-popup-type-notification-text-link-color:#000000;--adp-popup-type-notification-button-background:#282828;--adp-popup-type-notification-button-color:#FFF;--adp-popup-type-notification-button-border-radius:0}.adp-popup{display:none;position:fixed;z-index:999999;max-width:calc(100vw - 1.5rem);max-height:calc(100vh - 1.5rem);-webkit-backface-visibility:hidden}@media (min-width:720px){.adp-popup{max-width:calc(100vw - 6rem);max-height:calc(100vh - 6rem)}}.adp-popup.adp-popup-location-bottom-left{left:20px;bottom:20px}.adp-popup.adp-popup-location-bottom-right{right:20px;bottom:20px}.adp-popup .adp-popup-wrap{position:relative;overflow-x:hidden;overflow-y:auto;width:100%;box-shadow:var(--adp-popup-wrap-box-shadow)}.adp-popup .adp-popup-wrap::-webkit-scrollbar{width:var(--adp-popup-wrap-scrollbar-width)}.adp-popup .adp-popup-wrap::-webkit-scrollbar-track{background:var(--adp-popup-wrap-scrollbar-track-background)}.adp-popup .adp-popup-wrap::-webkit-scrollbar-thumb{background:var(--adp-popup-wrap-scrollbar-thumb-background)}.adp-popup .adp-popup-container{background:var(--adp-popup-container-background);width:100%}.adp-popup .adp-popup-outer{position:relative;display:flex;flex-direction:column}.adp-popup .adp-popup-close{position:absolute;background:0 0;color:var(--adp-popup-close-color);padding:0;line-height:1;font-size:var(--adp-popup-close-font-size);top:20px;right:20px;z-index:2}.adp-popup .adp-popup-close:before{font-family:advanced-popups-icons;content:"\e913"}@media (max-width:719.98px){.adp-popup-type-content{max-width:100vw;max-height:100vh}}.adp-popup-type-content .adp-popup-content{padding:40px}.adp-popup-type-content .adp-popup-close{font-size:var(--adp-popup-type-content-close-font-size)}@media (min-width:1024px){.adp-popup-type-content .adp-popup-outer{flex-direction:row}.adp-popup-type-content.adp-preview-image-left .adp-popup-close{color:var(--adp-popup-close-color)}.adp-popup-type-content .adp-popup-content{padding:80px;flex:1 0 50%;order:2}.adp-popup-type-content .adp-popup-content:first-child:last-child{flex:1 0 100%}}.pk-zoom-icon-popup{--pk-zoom-icon-popup-color:white;--pk-zoom-icon-popup-background:rgba(0, 0, 0, 0.6);--pk-zoom-icon-popup-font-size:16px}.pk-lightbox-container{position:relative;max-width:100%}.pk-zoom-icon-popup{display:block}.pk-zoom-icon-popup:after{display:block;position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;line-height:2.5rem;text-align:center;opacity:0;color:var(--pk-zoom-icon-popup-color);background:var(--pk-zoom-icon-popup-background);font-family:powerkit-icons;font-size:var(--pk-zoom-icon-popup-font-size);content:"\e916"}.pk-zoom-icon-popup img{min-width:100%}.pk-scroll-to-top{--pk-scrolltop-background:#a0a0a0;--pk-scrolltop-icon-color:#FFFFFF;--pk-scrolltop-opacity:1;--pk-scrolltop-opacity-hover:0.7}.pk-scroll-to-top{background:var(--pk-scrolltop-background);display:none;position:fixed;left:-9999px;bottom:2rem;opacity:0}.pk-scroll-to-top .pk-icon{display:block;padding:.6rem;color:var(--pk-scrolltop-icon-color);line-height:1}@media (min-width:760px){.pk-scroll-to-top{display:block}}.pk-share-buttons-wrap .pk-share-buttons-link .pk-share-buttons-count{opacity:.6}.pk-share-buttons-label,.pk-share-buttons-count{padding:0 .25rem}.pk-share-buttons-no-count .pk-share-buttons-count{display:none}.pk-share-buttons-layout-default .pk-share-buttons-item:nth-child(n+3) .pk-share-buttons-label{display:none}.pk-share-buttons-scheme-bold-bg .pk-share-buttons-link .pk-share-buttons-count{color:var(--pk-share-bold-bg-link-count-color)}:root,[data-site-scheme=default]{--cs-color-site-background:#ffffff;--cs-color-topbar-background:#ffffff;--cs-color-navbar-background:#ffffff;--cs-color-submenu-background:#000000}:root,[data-scheme=default]{--cs-color-contrast-50:#f8f9fa;--cs-color-contrast-100:#f8f9fa;--cs-color-contrast-200:#e9ecef;--cs-color-contrast-300:#dee2e6;--cs-color-contrast-400:#ced4da;--cs-color-contrast-500:#adb5bd;--cs-color-contrast-600:#6c757d;--cs-color-contrast-700:#495057;--cs-color-contrast-800:#343a40;--cs-color-contrast-900:#212529;--cs-color-accent:#2E073B;--cs-color-accent-contrast:#ffffff;--cs-color-primary:#000000;--cs-color-primary-rgb:'0,0,0';--cs-color-primary-contrast:#ffffff;--cs-color-secondary:#A8AAB2;--cs-color-secondary-background:#F2F4F6;--cs-color-secondary-contrast:#000000;--cs-color-headings:#000000;--cs-color-headings-hover:#6c757d;--cs-color-title-block:#000000;--cs-color-link:#2E073B;--cs-color-excerpt:#66676D;--cs-color-overlay-background:rgba(0,0,0,0.25)}[data-scheme=dark]{--cs-color-contrast-50:#000000;--cs-color-contrast-100:#333333;--cs-color-contrast-200:#494949;--cs-color-contrast-300:#606060;--cs-color-contrast-400:#777777;--cs-color-contrast-500:#8e8e8e;--cs-color-contrast-600:#a4a4a5;--cs-color-contrast-700:#bbbbbb;--cs-color-contrast-800:#d2d2d2;--cs-color-contrast-900:#e9e9e9;--cs-color-accent:#000000;--cs-color-accent-contrast:#ffffff;--cs-color-primary:#ffffff;--cs-color-primary-rgb:'255,255,255';--cs-color-primary-contrast:#000000;--cs-color-secondary:#858585;--cs-color-secondary-background:#333333;--cs-color-secondary-contrast:#000000;--cs-color-headings:#ffffff;--cs-color-headings-hover:#bbbbbb;--cs-color-title-block:#ffffff;--cs-color-link:#858585;--cs-color-excerpt:#777777;--cs-color-overlay-background:rgba(0,0,0,0.25)}[data-scheme]{color:var(--cs-color-primary)}:root,[data-scheme=default]{--cs-palette-color-black:#000000;--cs-palette-color-cyan-bluish-gray:#abb8c3;--cs-palette-color-white:#FFFFFF;--cs-palette-color-pale-pink:#f78da7;--cs-palette-color-vivid-red:#ce2e2e;--cs-palette-color-luminous-vivid-orange:#ff6900;--cs-palette-color-luminous-vivid-amber:#fcb902;--cs-palette-color-light-green-cyan:#7bdcb5;--cs-palette-color-vivid-green-cyan:#01d083;--cs-palette-color-pale-cyan-blue:#8ed1fc;--cs-palette-color-vivid-cyan-blue:#0693e3;--cs-palette-color-vivid-purple:#9b51e0;--cs-palette-color-secondary:#818181;--cs-palette-color-gray-50:#f8f9fa;--cs-palette-color-gray-100:#f8f9fa;--cs-palette-color-gray-200:#e9ecef}[data-scheme=dark]{--cs-palette-color-black:#FFFFFF;--cs-palette-color-white:#000000;--cs-palette-color-secondary:#858585;--cs-palette-color-gray-50:#000000;--cs-palette-color-gray-100:#333333;--cs-palette-color-gray-200:#494949}*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}article,aside,figure,header,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1,h5{margin-top:0;margin-bottom:1rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}small{font-size:80%}a{color:var(--cs-color-link);text-decoration:none;background-color:transparent}a:not([href]){color:inherit;text-decoration:none}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}input,button,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}button,[type=button],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner{padding:0;border-style:none}textarea{overflow:auto;resize:vertical}[type=search]{outline-offset:-2px;-webkit-appearance:none}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}.sr-only{display:none}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:16px}h1,h5{margin-bottom:1rem;font-weight:500;line-height:1.25;color:var(--cs-color-headings);word-wrap:break-word}h1{font-size:3rem}h5{font-size:1.25rem}small{font-size:80%;font-weight:400}.title-block{display:inline-block;margin-bottom:1rem;color:var(--cs-color-title-block)}.title-block:after{display:block;background:currentColor;margin-top:.125rem;width:100%;height:1px;content:''}input[type=text],input[type=email],input[type=search],textarea{display:block;width:100%;font-size:.75rem;padding:.375rem 1rem;line-height:1.625rem;color:#495057;background-color:#fff;border:1px solid #e3e5e7;border-radius:0}input[type=text]::-ms-expand,input[type=email]::-ms-expand,input[type=search]::-ms-expand,textarea::-ms-expand{background-color:transparent;border:0}input[type=text]::-moz-placeholder,input[type=email]::-moz-placeholder,input[type=search]::-moz-placeholder,textarea::-moz-placeholder{color:#a8aab2;opacity:1}input[type=text]:-ms-input-placeholder,input[type=email]:-ms-input-placeholder,input[type=search]:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#a8aab2;opacity:1}button,input[type=submit],.button{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;border:1px solid transparent;background-color:var(--cs-color-accent);color:var(--cs-color-accent-contrast);text-decoration:none;padding:.375rem 1rem;font-size:1rem;line-height:1.5;border-radius:0}.cs-input-group{position:relative;display:flex;flex-wrap:wrap;align-items:stretch;width:100%}.cs-input-group input[type=search]{position:relative;z-index:2;flex:1 1 auto;width:1%;margin-bottom:0}.cs-input-group button{line-height:1.5rem}.cs-input-group .search-submit{border-top-left-radius:0;border-bottom-left-radius:0}.search-form{border-radius:0}@font-face{font-family:cs-icons;src:url(https://devopscube.com/wp-content/themes/squaretype/css/icons/icons.ttf) format("truetype"),url(https://devopscube.com/wp-content/themes/squaretype/css/icons/icons.woff) format("woff"),url(https://devopscube.com/wp-content/themes/squaretype/css/icons/icons.svg#icons) format("svg");font-weight:400;font-style:normal;font-display:swap}[class*=" cs-icon-"]{font-family:cs-icons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.cs-icon-send:before{content:"\e935"}.cs-icon-menu:before{content:"\e917"}.cs-icon-search:before{content:"\e91f"}.cs-icon-x:before{content:"\e923"}body{background-color:var(--cs-color-site-background)}h5 a{color:var(--cs-color-headings)}.post-meta{color:var(--cs-color-secondary)}.post-meta a{color:var(--cs-color-primary)}@media (min-width:1020px){.cs-d-lg-none{display:none!important}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}body{overflow-x:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}.cs-container{width:100%;padding-right:20px;padding-left:20px;margin-right:auto;margin-left:auto}@media (min-width:600px){.cs-container{max-width:600px}}@media (min-width:720px){.cs-container{max-width:720px}}@media (min-width:1020px){.cs-container{max-width:1020px}}@media (min-width:1200px){.cs-container{max-width:1200px}}.site-content{margin:4rem 0}@media (min-width:1020px){.main-content{display:flex;flex-wrap:wrap;margin-right:-20px;margin-left:-20px}}@media (min-width:1020px){.content-area{position:relative;width:100%;padding-right:20px;padding-left:20px;flex:0 0 100%;max-width:100%}}.header-compact .navbar-follow{display:none}@media (min-width:1200px){.header-compact .navbar-follow{display:flex}}.header-compact.navbar-alignment-left .navbar-brand:not(:last-child){margin-right:2rem}.site-search-wrap{position:relative;display:flex;flex-direction:column;justify-content:center;background:var(--cs-color-secondary-background);height:0;visibility:hidden;overflow:hidden;z-index:4}.site-search{width:100%}.site-search .cs-input-group{position:relative;background:0 0;border:none;height:60px;line-height:60px}.site-search .search-form-wrap{position:relative;display:flex}.site-search .search-form{flex-grow:1}.site-search .search-submit{position:absolute;background:0 0;top:0;left:0;margin:0;padding:0;width:70px;color:var(--cs-color-contrast-600);height:100%;line-height:100%;font-size:0;order:1;z-index:5}.site-search .search-submit:after{position:absolute;width:100%;height:100%;top:0;left:0;content:"\e91f";font-family:cs-icons;display:flex;align-items:center;justify-content:center;font-size:1.25rem;z-index:3}.site-search .search-close{position:absolute;top:0;right:0;width:70px;height:100%;display:flex;align-items:center;justify-items:center;font-size:1.25rem;z-index:5}.site-search .search-close:after{position:absolute;width:100%;height:100%;top:0;left:0;font-family:cs-icons;display:flex;align-items:center;justify-content:center;content:"\e923";z-index:3}.site-search input[type=search]{background:#fff;font-size:1rem;order:2;padding:0 70px;height:100%;line-height:100%}.offcanvas{overflow:hidden;position:fixed;height:100%;top:0;left:-320px;width:320px;background:var(--cs-color-site-background);display:flex;flex-direction:column;-webkit-overflow-scrolling:touch;z-index:100;transform:translate3d(0,0,0)}.offcanvas-header{background:var(--cs-color-navbar-background);display:flex;justify-content:center;align-items:center;padding:20px;border-bottom:1px var(--cs-color-contrast-200) solid}.offcanvas-header .navbar-brand{margin-left:0}.offcanvas-header .toggle-offcanvas{font-size:1.5rem;margin-right:0}.navbar-offcanvas{display:flex;align-items:center;justify-content:space-between;width:100%}.offcanvas-sidebar{flex:1;overflow-x:hidden;overflow-y:auto}.offcanvas-inner{padding:20px}.site-overlay{display:none}.entry-title{margin:0}.post-media{margin-top:1.5rem;margin-bottom:1rem}.post-media figure{overflow:hidden;margin-bottom:0}.single .sidebar-disabled .entry-header-standard .entry-header-inner>.entry-inline-meta,.single .sidebar-disabled .entry-header-standard .entry-header-inner>.entry-title,.single .sidebar-disabled .entry-header-standard .entry-header-inner>.post-meta{max-width:680px;margin-left:auto;margin-right:auto}.navbar-primary{background:var(--cs-color-navbar-background)}.navbar-dummy{position:absolute;display:none}.navbar-wrap{display:flex;justify-content:center;flex-direction:column;border-bottom:1px solid var(--cs-color-contrast-200)}.navbar-container{display:flex;align-items:center;height:100%;width:100%;padding-right:20px;padding-left:20px;margin-right:auto;margin-left:auto}@media (min-width:600px){.navbar-container{max-width:600px}}@media (min-width:720px){.navbar-container{max-width:720px}}@media (min-width:1020px){.navbar-container{max-width:1020px}}@media (min-width:1200px){.navbar-container{max-width:1200px}}.navbar-container .navbar-content{display:flex;align-items:center;position:relative;width:100%;justify-content:space-between}.navbar-container .navbar-content .navbar-col{display:flex;align-items:center;height:100%;flex:1}.navbar-container .navbar-content .navbar-col:nth-child(1){justify-content:flex-start}.navbar-container .navbar-content .navbar-col:nth-child(2){justify-content:center;padding:0 .5rem}.navbar-container .navbar-content .navbar-col:nth-child(3){justify-content:flex-end}@media (min-width:1020px){.navbar-container .navbar-content{justify-content:flex-start}}.toggle-offcanvas{border:none;background:0 0;color:var(--cs-color-primary);height:2rem;font-size:1rem;display:flex;justify-content:center;align-items:center;padding:0}.toggle-offcanvas:not(:last-child){margin-right:1rem}.toggle-search{border:none;padding:0;background:0 0;color:var(--cs-color-primary);font-size:1rem;height:2rem;display:flex;justify-content:center;align-items:center}.toggle-search:not(:first-child){margin-left:1rem}@media (min-width:1020px){.toggle-search:not(:first-child){border-left:1px solid var(--cs-color-contrast-200);padding-left:1rem}}.navbar-follow+.toggle-search{border-left:none}.navbar-brand{display:inline-block;margin-bottom:0;line-height:inherit;white-space:nowrap;max-width:100%}.navbar-brand a{color:var(--cs-color-primary)}.navbar-brand img{max-width:inherit;max-height:40px;width:auto}.navbar-primary .navbar-brand{position:absolute;transform:translate3d(-50%,0,0);left:50%}@media (min-width:1020px){.navbar-primary .navbar-brand{position:static;left:0;transform:none}}.navbar-nav{display:flex;flex-wrap:nowrap;margin-bottom:0;list-style:none;padding:0}.navbar-nav li{position:relative}.navbar-nav>li>a{display:flex;align-items:center;padding-left:.75rem;padding-right:.75rem;color:var(--cs-color-primary)}.navbar-nav>li:first-child>a{padding-left:0}.navbar-nav>li:last-child>a{padding-right:0}.navbar-nav>li.menu-item-has-children>.sub-menu{top:100%;visibility:hidden;opacity:0;z-index:10}.navbar-nav>li.menu-item-has-children>a:after{content:"\e90c"}.navbar-nav .menu-item-has-children>a{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between}.navbar-nav .menu-item-has-children>a:after{padding-left:.25rem;font-family:cs-icons;font-size:12px;content:"\e90e"}.navbar-nav .sub-menu{background-color:var(--cs-color-submenu-background);position:absolute;margin:0;padding:.5rem 0;text-align:left;list-style:none}.navbar-nav .sub-menu>li{padding:0}.navbar-nav .sub-menu>li>a{position:relative;display:flex;white-space:nowrap;min-width:220px;padding:.5rem 1rem;color:var(--cs-color-primary)}.navbar-primary .navbar-nav{height:100%;display:none}.navbar-primary .navbar-nav>li{height:100%}.navbar-primary .navbar-nav>li>a{height:100%;white-space:nowrap}.navbar-primary .navbar-nav>li>a>span{position:relative}.navbar-primary .navbar-nav>li>a>span:after{background-color:var(--cs-color-primary);width:100%;height:1px;left:0;opacity:0;position:absolute;top:120%;transform:translateY(1px);content:""}@media (min-width:1020px){.navbar-primary .navbar-nav{display:flex}}.navbar-follow{display:flex;justify-content:flex-end;align-items:center}.navbar-follow .navbar-follow-btn{display:flex;align-items:center;justify-content:center;padding:.5rem 1.25rem}.navbar-follow .navbar-follow-btn i{margin-left:.5rem}.navbar-follow .navbar-follow-btn i:after{font-weight:400}.post-comments{display:none;margin-top:3rem;padding-top:3rem;border-top:1px var(--cs-color-contrast-200) solid}.post-comments .title-block{text-align:left}.title-comment-reply{margin-bottom:1.5rem;text-align:left}.title-comment-reply:after{margin-left:0}.post-comments{margin-top:3rem}.comment-notes{font-size:.875rem}@media (min-width:600px){.post-comments .comment-form{display:flex;flex-wrap:wrap;margin-right:-20px;margin-left:-20px}.post-comments .comment-form-comment{margin-bottom:1.5rem}.post-comments .comment-notes,.post-comments .comment-form-comment{flex:0 0 100%;max-width:100%;position:relative;width:100%;padding-right:20px;padding-left:20px;margin-bottom:1.5rem}.post-comments .comment-form-author,.post-comments .comment-form-email{flex:0 0 33.3333333333%;max-width:33.3333333333%;position:relative;width:100%;padding-right:20px;padding-left:20px;margin-bottom:1.5rem}}.form-submit{margin:0}@media (min-width:600px){.form-submit{flex:0 0 100%;max-width:100%;position:relative;width:100%;padding-right:20px;padding-left:20px}}.required{color:#dc3545}.title-comment-reply small{font-size:100%}.title-comment-reply small a{float:right;overflow:hidden;width:24px;height:24px}.title-comment-reply small a:before{float:left;position:relative;font-family:cs-icons;font-size:24px;content:"\e923"}.entry-header .entry-header-inner .entry-title{font-size:3rem;line-height:1}.entry-header .entry-header-inner .post-meta{margin-top:1.5rem}.entry-header .entry-header-inner .meta-category .char{width:3rem;height:3rem;line-height:3rem;font-size:2.5rem}@media (min-width:1020px){.entry-header .entry-header-inner .meta-category .char{width:4rem;height:4rem;line-height:4rem;font-size:3rem}}.entry-header-standard{margin-bottom:3rem}.post-meta{display:flex;flex-wrap:wrap;margin-top:1rem;margin-bottom:0;padding:0}.post-meta>li{display:flex;flex-wrap:wrap;align-items:center}.post-meta>li:not(:last-child):after{margin-right:.5rem;content:"\b7";margin-left:.5rem}.post-meta a,.post-meta .author a{color:var(--cs-color-primary)}.meta-author .by{margin-right:.5rem}.meta-author .author{display:flex;align-items:center}.meta-author .author a{display:flex;align-items:center;font-weight:700}.meta-category{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:1.5rem}.meta-category a{display:flex;align-items:center;color:var(--cs-color-primary);margin-left:1rem}.meta-category a:before{order:2;color:var(--cs-color-secondary);padding:0 .5rem;content:'—'}.meta-category a:first-child{margin-left:0}.meta-category a .char{order:1;display:flex;justify-content:center;background-color:#000;width:1.5rem;height:1.5rem;line-height:1.5rem;text-transform:lowercase}.meta-category a .label{position:relative;order:3;color:var(--cs-color-secondary)}.meta-category a .label:after{background-color:var(--cs-color-primary);width:100%;height:1px;left:0;opacity:0;position:absolute;top:100%;transform:translateY(1px);content:""}.widget{margin:0 0 2.5rem}.widget:last-child{margin:0}.widget ul{padding-left:0;list-style:none;margin-bottom:0}.widget_nav_menu a{display:block;padding:1rem 0}.widget_nav_menu .menu>.menu-item:not(:first-child){border-top:1px var(--cs-color-contrast-200) solid}.widget_nav_menu .menu-item-has-children{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;width:100%}.widget_nav_menu .menu-item-has-children>a{order:1}.widget_nav_menu .menu-item-has-children>span{order:2}.widget_nav_menu .menu-item-has-children>span:after{padding:1rem 0;font-family:cs-icons;font-size:14px;content:"\e90c"}.widget_nav_menu .menu-item-has-children>ul{width:100%;order:3}.widget_nav_menu .menu>.menu-item>.sub-menu{padding-bottom:1rem}.widget_nav_menu .menu .menu-item:not(.menu-item-has-children)>a:after{visibility:hidden;float:right;opacity:0;font-family:cs-icons;font-size:14px;transform:translateX(-100%);content:"\e90e"}.widget_nav_menu .sub-menu{display:none}.widget_nav_menu .sub-menu a{padding:.5rem 0;line-height:1}img{max-width:100%;height:auto}.post-media img{width:100%}.pk-font-primary{--pk-primary-font-color:var(--cs-color-primary)}.pk-font-secondary{--pk-secondary-font-color:var(--cs-color-secondary)}.pk-share-buttons-wrap .pk-share-buttons-link .pk-share-buttons-count{opacity:1}.pk-zoom-icon-popup:after{background:var(--cs-color-overlay-background);display:flex;justify-content:center;align-items:center;width:2rem;height:2rem;line-height:2rem;top:0;right:0;content:"\e928";font-family:cs-icons}@media (min-width:1020px){.footer-instagram .pk-instagram-username{position:relative;display:flex;justify-content:center;align-items:center;grid-area:user;transform:none;top:auto;left:auto}.footer-instagram .pk-instagram-item:nth-child(1){grid-area:i1}.footer-instagram .pk-instagram-item:nth-child(2){grid-area:i2}.footer-instagram .pk-instagram-item:nth-child(3){grid-area:i3}.footer-instagram .pk-instagram-item:nth-child(4){grid-area:i4}.footer-instagram .pk-instagram-item:nth-child(5){grid-area:i5}.footer-instagram .pk-instagram-item:nth-child(6){grid-area:i6}.footer-instagram .pk-instagram-item:nth-child(7){grid-area:i7}.footer-instagram .pk-instagram-item:nth-child(8){grid-area:i8}.footer-instagram .pk-instagram-item:nth-child(9){grid-area:i9}.footer-instagram .pk-instagram-item:nth-child(10){grid-area:i10}.footer-instagram .pk-instagram-item:nth-child(11){grid-area:i11}.footer-instagram .pk-instagram-item:nth-child(12){grid-area:i12}}.adp-popup .adp-popup-container{--adp-popup-container-background:var(--cs-color-site-background);--adp-popup-type-notification-text-color:var(--cs-color-base);--adp-popup-type-notification-text-link-color:var(--cs-color-contrast-600);--adp-popup-close-color:var(--cs-color-contrast-600);--adp-popup-close-hover-color:var(--cs-color-base)}:root{--swiper-theme-color:#007aff}:root{--swiper-navigation-size:44px}:root{--jp-carousel-primary-color:#fff;--jp-carousel-primary-subtle-color:#999;--jp-carousel-bg-color:#000;--jp-carousel-bg-faded-color:#222;--jp-carousel-border-color:#3a3a3a}</style><link rel="preload" href="https://devopscube.com/wp-content/cache/min/1/404f45a6ec3df42f28c79c6d4a603d2f.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" media="all" data-minify="1" />
+<meta name="description" content="In this blog, you will learn how to configure ingress TLS certificates for Kubernetes Ingress resources." />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="https://devopscube.com/configure-ingress-tls-kubernetes/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How To Configure Ingress TLS/SSL Certificates In Kubernetes" />
+<meta property="og:description" content="In this blog, you will learn how to configure ingress TLS certificates for Kubernetes Ingress resources." />
+<meta property="og:url" content="https://devopscube.com/configure-ingress-tls-kubernetes/" />
+<meta property="og:site_name" content="DevopsCube" />
+<meta property="article:publisher" content="https://www.facebook.com/devopscube/" />
+<meta property="article:section" content="KUBERNETES" />
+<meta property="og:updated_time" content="2022-03-18T03:24:06+00:00" />
+<meta property="og:image" content="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png" />
+<meta property="og:image:secure_url" content="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png" />
+<meta property="og:image:width" content="1160" />
+<meta property="og:image:height" content="468" />
+<meta property="og:image:alt" content="Configure Ingress TLS" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2022-03-16T14:59:48+00:00" />
+<meta property="article:modified_time" content="2022-03-18T03:24:06+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="How To Configure Ingress TLS/SSL Certificates In Kubernetes" />
+<meta name="twitter:description" content="In this blog, you will learn how to configure ingress TLS certificates for Kubernetes Ingress resources." />
+<meta name="twitter:site" content="@devopscube" />
+<meta name="twitter:creator" content="@bibinwillson" />
+<meta name="twitter:image" content="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Bibin Wilson" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="6 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://devopscube.com/#person","name":"devopscube","logo":{"@type":"ImageObject","@id":"https://devopscube.com/#logo","url":"https://devopscube.com/wp-content/uploads/2019/08/devopscube-black-2.png","caption":"devopscube","inLanguage":"en-US","width":"290","height":"70"},"image":{"@type":"ImageObject","@id":"https://devopscube.com/#logo","url":"https://devopscube.com/wp-content/uploads/2019/08/devopscube-black-2.png","caption":"devopscube","inLanguage":"en-US","width":"290","height":"70"}},{"@type":"WebSite","@id":"https://devopscube.com/#website","url":"https://devopscube.com","name":"devopscube","publisher":{"@id":"https://devopscube.com/#person"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png","url":"https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png","width":"1160","height":"468","caption":"Configure Ingress TLS","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://devopscube.com/configure-ingress-tls-kubernetes/#webpage","url":"https://devopscube.com/configure-ingress-tls-kubernetes/","name":"How To Configure Ingress TLS/SSL Certificates In Kubernetes","datePublished":"2022-03-16T14:59:48+00:00","dateModified":"2022-03-18T03:24:06+00:00","isPartOf":{"@id":"https://devopscube.com/#website"},"primaryImageOfPage":{"@id":"https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://devopscube.com/author/bibinwilson/","name":"Bibin Wilson","url":"https://devopscube.com/author/bibinwilson/","image":{"@type":"ImageObject","@id":"https://devopscube.com/wp-content/uploads/2019/11/unnamed-150x150.jpg","url":"https://devopscube.com/wp-content/uploads/2019/11/unnamed-150x150.jpg","caption":"Bibin Wilson","inLanguage":"en-US"},"sameAs":["https://devopscube.com/author/bibinwilson/","https://twitter.com/https://twitter.com/bibinwillson"]},{"@type":"BlogPosting","headline":"How To Configure Ingress TLS/SSL Certificates In Kubernetes","keywords":"Configure Ingress TLS","datePublished":"2022-03-16T14:59:48+00:00","dateModified":"2022-03-18T03:24:06+00:00","author":{"@id":"https://devopscube.com/author/bibinwilson/"},"publisher":{"@id":"https://devopscube.com/#person"},"description":"In this blog, you will learn how to configure ingress TLS certificates for Kubernetes Ingress resources.","name":"How To Configure Ingress TLS/SSL Certificates In Kubernetes","@id":"https://devopscube.com/configure-ingress-tls-kubernetes/#richSnippet","isPartOf":{"@id":"https://devopscube.com/configure-ingress-tls-kubernetes/#webpage"},"image":{"@id":"https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://devopscube.com/configure-ingress-tls-kubernetes/#webpage"}}]}</script>
+
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//google-analytics.com' />
+<link rel="preload" href="https://devopscube.com/wp-content/plugins/canvas/assets/fonts/canvas-icons.woff" as="font" type="font/woff" crossorigin>
+<link rel='alternate stylesheet' id='powerkit-icons-css' href='https://devopscube.com/wp-content/plugins/powerkit/assets/fonts/powerkit-icons.woff?ver=2.7.8' as='font' type='font/wof' crossorigin />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFFFFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #ce2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb902;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #01d083;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--secondary: #818181;--wp--preset--color--gray-50: #f8f9fa;--wp--preset--color--gray-100: #f8f9fb;--wp--preset--color--gray-200: #e9ecef;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<style id='csco-styles-inline-css'>
+.searchwp-live-search-no-min-chars:after { content: "Continue typing" }
+</style>
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://devopscube.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<script src='https://devopscube.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script src='https://devopscube.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/advanced-popups/public/js/advanced-popups-public.js?ver=1659359007' id='advanced-popups-js' defer></script>
+<script src='https://devopscube.com/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=6.0.1' id='ppress-flatpickr-js' defer></script>
+<script src='https://devopscube.com/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=6.0.1' id='ppress-select2-js' defer></script>
+<link rel="preload" href="https://devopscube.com/wp-content/plugins/absolute-reviews/fonts/absolute-reviews-icons.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="https://devopscube.com/wp-content/plugins/advanced-popups/fonts/advanced-popups-icons.woff" as="font" type="font/woff" crossorigin>
+<style type="text/css" media="all" id="canvas-blocks-dynamic-styles">
+
+</style>
+<style type="text/css">.eafl-disclaimer-small { font-size: 0.8em; }
+.eafl-disclaimer-smaller { font-size: 0.6em; }</style><meta name='ir-site-verification-token' value='133200' /><style>img#wpstats{display:none}</style>
+<link rel="icon" href="https://devopscube.com/wp-content/uploads/2016/07/cropped-devopscube-twitter-dp-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://devopscube.com/wp-content/uploads/2016/07/cropped-devopscube-twitter-dp-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://devopscube.com/wp-content/uploads/2016/07/cropped-devopscube-twitter-dp-180x180.png" />
+<meta name="msapplication-TileImage" content="https://devopscube.com/wp-content/uploads/2016/07/cropped-devopscube-twitter-dp-270x270.png" />
+<style id="wp-custom-css">
+			.single-post .entry-content h3 a {
+	color: black;
+    padding: 2px 0px 1px;
+    background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(0, 255, 0, 0.35) calc(50% - 9px), rgba(0, 255, 0, 0.35) 100%);
+    transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s;
+    background-size: 100% 200%;
+    background-position: 0px 0px;
+    word-break: break-word;
+}
+
+.nb img {
+	border: none !important;
+}
+
+.pk-toc li {
+	line-height: 1.5rem;
+}
+
+li code {
+	background: var(--devsite-inline-code-background,#f1f3f4);
+    color: #37474f;
+    direction: ltr!important;
+    padding: var(--devsite-inline-code-padding,1px 4px);
+    text-align: left!important;
+	font-family: monospace, Consolas, monaco;
+}
+
+.adp-popup-type-content .adp-popup-content {
+	padding: 10px !important;
+}
+
+.adp-popup-content .wp-block-image img {
+	border: none;
+}
+
+.wp-block-image img .img-nb {
+	border: none !important;
+}
+
+.popup-img {
+	border: none !important;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.site-footer {
+	background: #f8f9fa;
+}
+
+.is-style-cnvs-list-styled li::before {
+	width: 2.2rem !important;
+	height: 2.2rem !important;
+}
+
+.is-style-cnvs-list-styled li {
+  padding-left: 2.8rem;
+	word-wrap: break-word;
+  	color: #404953
+}
+
+.pk-toc li a {
+	color: #2e073b !important;
+	border-bottom: none !important;
+	font-size: 17px !important;
+}
+
+p code {
+	font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+    border-radius: 3px;
+    line-height: 22px;
+    font-size: 15px;
+    padding: 3px 6px 3px 6px;
+    background: #f2f2f2;
+}
+}
+
+/* 	p code {
+      color: #007C4D;
+      padding: 5px;
+      font-family: Courier;
+      font-size: 17px;
+      background: #fff;
+      margin: 0px 7px 0px 7px;
+      border: 1px solid #e6e6e6 !important;
+  } */
+
+.wp-block-preformatted, .wp-block-preformatted pre {
+    font-family: Consolas, monaco, monospace;
+    line-height: 1.9;
+    font-size: 0.9rem;
+    color: #000000;
+    white-space: pre-wrap;
+	  -webkit-font-smoothing: antialiased;
+	color: #404953
+}
+  
+  pre {
+      font-size: 15px;
+      line-height: 30px;
+		  white-space: pre-wrap;
+      -webkit-font-smoothing: antialiased;
+      border-style: solid!important;
+      border-width: 1px!important;
+      border-color: #dedede!important;
+        background: rgba(0,0,0,.05);
+        margin-bottom: 1.5em;
+      padding: 20px;
+  /*     overflow: auto; */
+      max-width: 100%;
+  }
+  
+  .single-post .entry-content h2 {
+      color: #231F20;
+/*       font-family: "proxima-bold", Sans-serif; */
+      font-size: 35px;
+      font-weight: 800;
+      line-height: 1.5em;
+
+      
+  }
+  
+  .single-post .entry-content h3, h4, h5 {
+      color: #000;
+/*       font-family: "proxima-bold", Sans-serif; */
+      font-weight: 600;
+      line-height: 1.5em;
+      
+  }
+  
+  .single-post .entry-content p, li, blockquote {
+/*       font-family: proxima-normal; */
+/*       color: ; */
+      font-size: 18px;
+		  line-height: 1.7em;
+/* 		  letter-spacing: -0.02px !important; */
+      
+  }
+  
+  .post-meta li  {
+      font-size: 14px !important;
+/*       font-family: hg-grotesk !important; */
+      color: #a8aab2;
+  }
+  
+  /* .widget-area h5 {
+      font-family: proxima-normal !important;
+        font-weight: 400;
+      font-size:16px !important
+  }
+  
+  .pk-widget-posts .pk-preview-enabled .entry-title {
+      font-family: proxima-normal !important;
+        font-weight: 400;
+      font-size:16px !important
+  }
+   */
+  .single-post .entry-content p a {
+      color: #00a562;
+      border-bottom: 1px dotted #bdc3c7;
+      text-decoration: none;
+  }
+  
+  .single-post .entry-content li a {
+      color: #00a562;
+      border-bottom: 1px dotted #bdc3c7;
+      text-decoration: none;
+  }
+  
+  blockquote {
+      font-weight: 400 !important;
+  }
+  
+  .arrow-list, .line-list, .cool-list .list-bg, .entry-content p {
+      color: #404953;
+      font-size: 19px;
+      line-height: 2em;
+      letter-spacing: 0px;
+  }
+  
+  
+  
+  .wp-block-quote p {
+/*         font-family: proxima-normal; */
+        color: #404953;
+      font-size: 20px !important;
+      line-height: 2em;
+        letter-spacing: 0px;
+  }
+  
+  .wp-block-button a {
+      padding: 20px !important;
+/*       font-family: proxima-normal !important; */
+      font-size: 17px !important;
+  }
+  
+  .widget-area h5 {
+/*       font-family: proxima-normal; */
+  }
+  
+  .comment-content {
+      font-size: 16px;
+  }
+  
+  body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* 
+  .wp-block-preformatted {
+      font-size: 16px;
+      font-family: monospace,monospace;
+      line-height: 30px;
+      -webkit-font-smoothing: antialiased;
+      border-style: solid!important;
+      border-width: 1px!important;
+      border-color: #dedede!important;
+  }
+  .wp-block-preformatted code {
+      border: none;
+  }
+  .wp-block-code {
+       padding: 20px;
+      white-space: pre-wrap;
+       -webkit-font-smoothing: antialiased;
+       border: none !important;
+         border: 1px solid #dedede !important;
+  }
+  .wp-block-code code {
+      border: none;
+      line-height: 30px;
+      font-size: 16px;
+  }
+  
+  pre {
+      font-family: monospace,monospace;
+      font-size: 0.8em;
+  
+        line-height: 1.8;
+      background: #F5F5F5;
+      padding: 20px;
+      border-style: solid!important;
+      border-width: 1px!important;
+      border-color: #dedede!important;
+      overflow: auto;
+      margin: 2rem 0 2rem 0 !important;
+  }
+  
+  code {
+      border: 1px solid #d3dce6;
+      background-color: #f5f5f5;
+      padding: 0 8px;
+      border-radius: 4px;
+      font-style: normal;
+      font-family: monospace,monospace;
+      display: inline-block;
+      line-height: 24px;
+      font-size: 0.8em;
+      line-height: 20px;
+      -webkit-font-smoothing: antialiased;
+  } */
+  
+  
+  
+  #comments {
+      background: #FBFBFB;
+      padding: 50px;
+      font-size: 16px;
+  }
+  
+  #comments .comments-title, .comment-reply-title {
+      font-size: 26px;
+  }
+  
+  .comment-respond {
+      background: #fff;
+      padding: 50px
+  }
+  
+  .comment-respond input {
+      background: #fff;
+      border: 1px solid #e6e6e6;
+  }
+  
+  .comment-respond .submit {
+      background: #00d07e !important;
+      width: 100%;
+      padding: 15px
+  }
+  .comment-respond a {
+      color: #bb4a03;
+  }
+  
+  #comment {
+      background: #fff;
+      border: 1px solid #e6e6e6;
+  }
+  .comment-author-info a {
+      color: #636e72;
+  }
+  
+  blockquote,.wp-block-quote.is-style-large p {
+      font-size: 20px;
+      font-style: normal;
+      line-height: 1.6;
+  }
+  blockquote p {
+      margin-bottom: 0px !important;
+  }
+  
+  .body-script img {
+      border: solid 4px #D3D3D3;
+  }
+  
+  /*LisT CSS #######################*/
+  
+    ol.line-list {
+        counter-reset: section;
+    }
+    ol.line-list>li {
+        background-image: linear-gradient(180deg, #ddd 0%, #ddd 100%);
+        background-repeat: no-repeat;
+        background-size: 2px 100%;
+        background-position: 1rem center;
+        display: block;
+        min-height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        margin-bottom: 0;
+        position: relative;
+    }
+    
+    ol.line-list>li::before {
+        background: #ff6b6b;
+        border-radius: 50%;
+        color: white;
+        counter-increment: section;
+        content: counter(section);
+        counter-increment: section;
+        display: block;
+        left: 0;
+        line-height: 1.8;
+        position: absolute;
+        text-align: center;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    
+    ol.cool-list {
+        counter-reset: section;
+    }
+    ol.cool-list>li {
+        /*background-image: linear-gradient(180deg, #ddd 0%, #ddd 100%); */
+        background-repeat: no-repeat;
+        background-size: 2px 100%;
+        background-position: 1rem center;
+        display: block;
+        min-height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        margin-bottom: 0;
+        position: relative;
+    }
+    
+    ol.cool-list>li::before {
+        background: #ff6b6b;
+        border-radius: 50%;
+        color: white;
+        counter-increment: section;
+        content: counter(section);
+        counter-increment: section;
+        display: block;
+        left: 0;
+        line-height: 1.8;
+        position: absolute;
+        text-align: center;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+  
+  
+  ol.arrow-list>li {
+      /*background-image: linear-gradient(180deg, #ddd 0%, #ddd 100%); */
+      background-repeat: no-repeat;
+      background-size: 2px 100%;
+      background-position: 1rem center;
+      display: block;
+      min-height: 2rem;
+      padding-bottom: 1rem;
+      padding-left: 3rem;
+      margin-bottom: 0;
+      position: relative;
+  }
+  
+  ol.arrow-list>li::before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      display: block;
+      width: 28px;
+      height: 28px;
+      content: '';
+      background: url(https://devopscube.com/wp-content/themes/generatepress_child/images/arrow_list.png) no-repeat center center;
+      background-size: contain;
+  }
+  
+  ol.explain-list {
+        counter-reset: section;
+    }
+  
+  ol.explain-list>li {
+        background-image: linear-gradient(180deg, #ddd 0%, #ddd 100%);
+        background-repeat: no-repeat;
+        background-size: 2px 100%;
+        background-position: 1rem center;
+        display: block;
+        min-height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        margin-bottom: 0;
+        position: relative;
+    }
+    
+    
+  ol.explain-list>li::before {
+        background: #ff6b6b;
+        border-radius: 50%;
+        color: white;
+        display: block;
+        left: 0;
+        content: "?";
+        line-height: 1.8;
+        position: absolute;
+        text-align: center;
+        width: 2.2rem;
+        height: 2.2rem;
+  }
+  
+  ol.step-list {
+      counter-reset: section;
+  }
+  
+  ol.step-list>li {
+      background-image: linear-gradient(180deg, #ddd 0%, #ddd 100%);
+      background-repeat: no-repeat;
+      background-size: 2px 100%;
+      background-position: 1rem center;
+      display: block;
+      min-height: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 3rem;
+      margin-bottom: 0;
+      position: relative;
+  }
+  
+  
+  ol.step-list>li::before {
+      background: #ff6b6b;
+      border-radius: 50%;
+      color: white;
+      display: block;
+      left: 0;
+      content: ">";
+      line-height: 1.8;
+      position: absolute;
+      text-align: center;
+      width: 2.2rem;
+      height: 2.2rem;
+  }
+  
+  .list-bg {
+      background: #fafbfd;
+      padding: 20px;
+        padding-left: 40px
+  }
+  
+  .comment-metadata {
+      display:none;
+  }
+  .comment-content {
+        border-top: none;
+      border-bottom: none;
+  }
+  
+  .comment .children  {
+      border-bottom: none !important;
+  }
+  
+  .post-content p a {
+      color: #00a562;
+      border-bottom: 1px dotted #bdc3c7;
+      text-decoration: none;  
+  }
+  
+  .post-content img {
+      border: solid 4px #D3D3D3;
+      margin: 20px 0px 20px 0px;
+  }
+  
+  .wp-block-image figcaption {
+      font-size: 13px;
+      text-align: center;
+  }
+
+table th, .wp-block-table th, table td, .wp-block-table td {
+	border: 1px solid #dee2e6 !important;
+}
+td a {
+	text-decoration: underline !important
+}
+
+table {
+	font-size: 16px;
+}
+
+.wp-block-image img {
+	border: 4px solid #dddddd;
+}
+
+.wp-block-image.alignwide img {
+	border: none;
+}
+
+.is-style-cnvs-heading-numbered {
+	line-height: 1em !important;
+}
+
+h2.is-style-cnvs-heading-numbered:before {
+	background: #ff6b81;
+	line-height: 1.5em;
+}		</style>
+<style id="kirki-inline-styles">:root, [data-scheme="default"]{--cs-color-accent:#2E073B;--cs-color-link:#2E073B;--cs-color-overlay-background:rgba(0,0,0,0.25);}:root, [data-site-scheme="default"]{--cs-color-navbar-background:#FFFFFF;--cs-color-submenu-background:#ffffff;--cs-color-title-block:#000000;--cs-color-hero-list-background:#FFFFFF;}button, input[type="button"], input[type="reset"], input[type="submit"], .wp-block-button:not(.is-style-squared) .wp-block-button__link, .button, .pk-button, .pk-scroll-to-top, .cs-overlay .post-categories a, .site-search [type="search"], .subcategories .cs-nav-link, .post-header .pk-share-buttons-wrap .pk-share-buttons-link, .pk-dropcap-borders:first-letter, .pk-dropcap-bg-inverse:first-letter, .pk-dropcap-bg-light:first-letter, .widget-area .pk-subscribe-with-name input[type="text"], .widget-area .pk-subscribe-with-name button, .widget-area .pk-subscribe-with-bg input[type="text"], .widget-area .pk-subscribe-with-bg button, .footer-instagram .instagram-username, .adp-popup-type-notification-box .adp-popup-button, .adp-popup-type-notification-bar .adp-popup-button{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}.cs-input-group input[type="search"], .pk-subscribe-form-wrap input[type="text"]:first-child{border-top-left-radius:0;border-bottom-left-radius:0;}.navbar-nav .sub-menu{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}.post-media figure, .entry-thumbnail, .cs-post-thumbnail, .pk-overlay-thumbnail, .pk-post-thumbnail, .cs-hero-layout-boxed{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}.meta-category .char{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}body{font-size:1rem;letter-spacing:0px;}.cs-font-primary, button, .button, input[type="button"], input[type="reset"], input[type="submit"], .no-comments, .text-action, .archive-wrap .more-link, .share-total, .nav-links, .comment-reply-link, .post-tags .title-tags, .post-sidebar-tags a, .meta-category a, .read-more, .post-prev-next .link-text, .navigation.pagination .nav-links > span, .navigation.pagination .nav-links > a, .subcategories .cs-nav-link, .widget_categories ul li a, .entry-meta-details .pk-share-buttons-count, .entry-meta-details .pk-share-buttons-label, .pk-font-primary, .navbar-dropdown-btn-follow, .footer-instagram .instagram-username, .navbar-follow-instagram .navbar-follow-text, .navbar-follow-youtube .navbar-follow-text, .navbar-follow-facebook .navbar-follow-text, .pk-twitter-counters .number, .pk-instagram-counters .number, .navbar-follow .navbar-follow-counters .number, .footer-instagram .pk-instagram-username, .sight-portfolio-entry__meta{font-size:0.875rem;letter-spacing:0.025em;text-transform:uppercase;}.wp-block-button .wp-block-button__link, .abr-review-item .abr-review-name{font-size:0.875rem;letter-spacing:0.025em;text-transform:uppercase;}input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], select, textarea, label, .cs-font-secondary, .post-meta, .archive-count, .page-subtitle, .site-description, figcaption, .post-tags a, .tagcloud a, .wp-block-image figcaption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-pullquote cite, .wp-block-pullquote footer, .wp-block-pullquote .wp-block-pullquote__citation, .post-format-icon, .comment-metadata, .says, .logged-in-as, .must-log-in, .wp-caption-text, .widget_rss ul li .rss-date, blockquote cite, .wp-block-quote cite, div[class*="meta-"], span[class*="meta-"], .navbar-brand .tagline, small, .post-sidebar-shares .total-shares, .cs-breadcrumbs, .cs-homepage-category-count, .navbar-follow-counters, .searchwp-live-search-no-results em, .searchwp-live-search-no-min-chars:after, .pk-font-secondary, .pk-instagram-counters, .pk-twitter-counters, .footer-copyright, .pk-instagram-item .pk-instagram-data .pk-meta, .navbar-follow-button .navbar-follow-text, .archive-timeline .entry-date, .archive-wrap .archive-timeline .entry-date span, .cs-video-tools-large .cs-tooltip, .abr-badge-primary{font-size:0.875rem;letter-spacing:0px;text-transform:none;}.meta-category a .char{text-transform:uppercase;}.entry-excerpt{font-size:0.875rem;line-height:1.5;}.entry-content{font-size:1.125rem;letter-spacing:inherit;}.site-title{font-size:1.875rem;letter-spacing:0px;text-transform:none;}.footer-title{font-size:1.875rem;letter-spacing:0px;text-transform:none;}h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .comment-author .fn, blockquote, .pk-font-heading, .post-sidebar-date .reader-text, .wp-block-quote, .wp-block-cover .wp-block-cover-image-text, .wp-block-cover .wp-block-cover-text, .wp-block-cover h2, .wp-block-cover-image .wp-block-cover-image-text, .wp-block-cover-image .wp-block-cover-text, .wp-block-cover-image h2, .wp-block-pullquote p, p.has-drop-cap:not(:focus):first-letter, .pk-font-heading, .cnvs-block-tabs .cnvs-block-tabs-button a, .sight-portfolio-area-filter__title, .sight-portfolio-area-filter__list-item a{font-family:hg-grotesk,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";letter-spacing:-0.025em;text-transform:none;}.title-block, .pk-font-block, .pk-widget-contributors .pk-author-posts > h6, .cnvs-block-section-heading{font-size:0.75rem;letter-spacing:0.025em;text-transform:uppercase;}.navbar-nav > li > a, .cs-mega-menu-child > a, .widget_archive li, .widget_categories li, .widget_meta li a, .widget_nav_menu .menu > li > a, .widget_pages .page_item a{font-family:hg-grotesk,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:1rem;letter-spacing:0px;text-transform:none;}.navbar-nav .sub-menu > li > a, .widget_categories .children li a, .widget_nav_menu .sub-menu > li > a{font-size:0.9rem;letter-spacing:0px;text-transform:none;}.navbar-primary .navbar-wrap, .navbar-primary .navbar-content{height:65px;}.offcanvas-header{flex:0 0 65px;}.post-sidebar-shares{top:calc( 65px + 20px );}.admin-bar .post-sidebar-shares{top:calc( 65px + 52px );}.header-large .post-sidebar-shares{top:calc( 65px * 2 + 52px );}.header-large.admin-bar .post-sidebar-shares{top:calc( 65px * 2 + 52px );}.cs-hero-layout-fullwidth{min-height:auto;}@media (max-width: 599px){.pk-subscribe-with-name input[type="text"], .pk-subscribe-with-bg input[type="text"]{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+<body class="post-template-default single single-post postid-13178 single-format-standard wp-embed-responsive cs-page-layout-disabled header-compact navbar-width-boxed navbar-alignment-left navbar-sticky-enabled navbar-smart-enabled block-align-enabled elementor-default elementor-kit-6440" data-scheme='default' data-site-scheme='default'>
+<div class="site-overlay"></div>
+<div class="offcanvas">
+<div class="offcanvas-header">
+<nav class="navbar navbar-offcanvas">
+<a class="navbar-brand" href="https://devopscube.com/" rel="home">
+<img width="600" height="100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20100'%3E%3C/svg%3E" alt="DevopsCube" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/05/dcube-logo-ops.png"><noscript><img width="600" height="100" src="https://devopscube.com/wp-content/uploads/2022/05/dcube-logo-ops.png"  alt="DevopsCube" ></noscript> </a>
+<button type="button" class="toggle-offcanvas">
+ <i class="cs-icon cs-icon-x"></i>
+</button>
+</nav>
+</div>
+<aside class="offcanvas-sidebar">
+<div class="offcanvas-inner widget-area">
+<div class="widget widget_nav_menu cs-d-lg-none"><div class="menu-mega-main-menu-container"><ul id="menu-mega-main-menu" class="menu"><li id="menu-item-4238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4238"><a>Learn</a>
+<ul class="sub-menu">
+<li id="menu-item-4328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4328"><a href="https://devopscube.com/category/kubernetes/">Kubernetes</a></li>
+<li id="menu-item-4274" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4274"><a href="https://devopscube.com/category/devops/cicd/jenkins/">Jenkins</a></li>
+<li id="menu-item-4327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4327"><a href="https://devopscube.com/category/docker/">Containers</a></li>
+</ul>
+</li>
+<li id="menu-item-4241" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4241"><a href="#">Resources</a>
+<ul class="sub-menu">
+<li id="menu-item-4330" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4330"><a href="https://devopscube.com/list-of-devops-blogs-and-resources/">Best DevOps Resources</a></li>
+<li id="menu-item-14141" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14141"><a href="https://devopscube.com/best-kubernetes-certifications/">Best Kubernetes Certifications</a></li>
+<li id="menu-item-14138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14138"><a href="https://devopscube.com/best-devops-certifications/">Best DevOps Certifications</a></li>
+<li id="menu-item-14139" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14139"><a href="https://devopscube.com/programming-languages-devops/">Best DevOps Programming Languages</a></li>
+<li id="menu-item-14140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14140"><a href="https://devopscube.com/top-websites-to-learn-programming-online/">Best Websites To Learn Coding</a></li>
+</ul>
+</li>
+<li id="menu-item-4337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4337"><a href="#">Roadmaps</a>
+<ul class="sub-menu">
+<li id="menu-item-14142" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14142"><a href="https://devopscube.com/linux-shell-scripting-for-devops/">How To Shell Scripting</a></li>
+<li id="menu-item-14143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14143"><a href="https://devopscube.com/git-for-devops/">How to Learn Git</a></li>
+</ul>
+</li>
+<li id="menu-item-9439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9439"><a href="https://devopscube.com/newsletter/">Newsletter</a></li>
+<li id="menu-item-10114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10114"><a href="https://devopscube.com/tag/devops-certification/">Certification Guides</a>
+<ul class="sub-menu">
+<li id="menu-item-10115" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10115"><a title="Certified Kubernetes Administrator Exam Guide" href="https://devopscube.com/cka-exam-study-guide/">CKA Study Guide</a></li>
+<li id="menu-item-10145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10145"><a title="Certified Kubernetes Developer Exam Guide" href="https://devopscube.com/ckad-exam-study-guide/">CKAD Study Guide</a></li>
+<li id="menu-item-10116" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10116"><a title="Certified Kubernetes Security Specialist Exam Guide" href="https://devopscube.com/cks-exam-guide-tips/">CKS Study Guide</a></li>
+</ul>
+</li>
+<li id="menu-item-11918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11918"><a href="https://devopscube.com/black-friday-deals/">Deals</a></li>
+</ul></div></div>
+</div>
+</aside>
+</div>
+<div id="page" class="site">
+<div class="site-inner">
+<header id="masthead" class="site-header">
+<nav class="navbar navbar-primary navbar-shadow-enabled" data-scheme="default">
+<div class="navbar-wrap data-scheme=&quot;default&quot;">
+<div class="navbar-container">
+<div class="navbar-content">
+<div class="navbar-col">
+<button type="button" class="navbar-toggle-offcanvas toggle-offcanvas  cs-d-lg-none">
+<i class="cs-icon cs-icon-menu"></i>
+</button>
+<div class="navbar-brand">
+<a href="https://devopscube.com/" rel="home">
+<img width="600" height="100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20100'%3E%3C/svg%3E" alt="DevopsCube" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/05/dcube-logo-ops.png"><noscript><img width="600" height="100" src="https://devopscube.com/wp-content/uploads/2022/05/dcube-logo-ops.png"  alt="DevopsCube" ></noscript> </a>
+</div>
+<ul id="menu-mega-main-menu-1" class="navbar-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4238"><a><span>Learn</span></a>
+<ul class="sub-menu" data-scheme="default">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4328"><a href="https://devopscube.com/category/kubernetes/">Kubernetes</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4274"><a href="https://devopscube.com/category/devops/cicd/jenkins/">Jenkins</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4327"><a href="https://devopscube.com/category/docker/">Containers</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4241"><a href="#"><span>Resources</span></a>
+<ul class="sub-menu" data-scheme="default">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4330"><a href="https://devopscube.com/list-of-devops-blogs-and-resources/">Best DevOps Resources</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14141"><a href="https://devopscube.com/best-kubernetes-certifications/">Best Kubernetes Certifications</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14138"><a href="https://devopscube.com/best-devops-certifications/">Best DevOps Certifications</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14139"><a href="https://devopscube.com/programming-languages-devops/">Best DevOps Programming Languages</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14140"><a href="https://devopscube.com/top-websites-to-learn-programming-online/">Best Websites To Learn Coding</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4337"><a href="#"><span>Roadmaps</span></a>
+<ul class="sub-menu" data-scheme="default">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14142"><a href="https://devopscube.com/linux-shell-scripting-for-devops/">How To Shell Scripting</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14143"><a href="https://devopscube.com/git-for-devops/">How to Learn Git</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9439"><a href="https://devopscube.com/newsletter/"><span>Newsletter</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10114"><a href="https://devopscube.com/tag/devops-certification/"><span>Certification Guides</span></a>
+<ul class="sub-menu" data-scheme="default">
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10115"><a title="Certified Kubernetes Administrator Exam Guide" href="https://devopscube.com/cka-exam-study-guide/">CKA Study Guide</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10145"><a title="Certified Kubernetes Developer Exam Guide" href="https://devopscube.com/ckad-exam-study-guide/">CKAD Study Guide</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10116"><a title="Certified Kubernetes Security Specialist Exam Guide" href="https://devopscube.com/cks-exam-guide-tips/">CKS Study Guide</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11918"><a href="https://devopscube.com/black-friday-deals/"><span>Deals</span></a></li>
+</ul> </div>
+<div class="navbar-col">
+</div>
+<div class="navbar-col">
+<div class="navbar-follow navbar-follow-button">
+<a class="button navbar-follow-btn" href="https://devopscube.com/recommends/start-here/" target="_blank">
+START HERE<i class="cs-icon cs-icon-send"></i> </a>
+</div>
+<button type="button" class="navbar-toggle-search toggle-search">
+<i class="cs-icon cs-icon-search"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="site-search-wrap" id="search">
+<div class="site-search">
+<div class="cs-container">
+<div class="search-form-wrap">
+<form role="search" method="get" class="search-form" action="https://devopscube.com/">
+<label class="sr-only">Search for:</label>
+<div class="cs-input-group">
+<input type="search" value="" name="s" class="search-field" placeholder="Enter your search topic" required>
+<button type="submit" class="search-submit">Search</button>
+</div>
+</form>
+<span class="search-close"></span>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="site-primary">
+<div class="site-content sidebar-disabled post-sidebar-enabled">
+<div class="cs-container">
+<div id="content" class="main-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main">
+<article class=" entry-preview entry post-13178 post type-post status-publish format-standard has-post-thumbnail category-kubernetes">
+
+<section class="entry-header entry-header-standard entry-header-thumbnail">
+<div class="entry-header-inner">
+<div class="entry-inline-meta">
+<div class="meta-category"><a class="category-style" href="https://devopscube.com/category/kubernetes/"><span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">K</span><span class="label">KUBERNETES</span></a></div> </div>
+<h1 class="entry-title">How To Configure Ingress TLS/SSL Certificates in Kubernetes</h1>
+<ul class="post-meta"><li class="meta-author"><span class="by">by</span><span class="author"><a class="url fn n" href="https://devopscube.com/author/bibinwilson/" title="View all posts by Bibin Wilson">Bibin Wilson</a></span></li><li class="meta-date">March 16, 2022</li></ul>
+<div class="post-media">
+<figure>
+<a href="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png">
+<img width="1160" height="468" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201160%20468'%3E%3C/svg%3E" class="pk-lazyload-disabled wp-post-image" alt="Configure Ingress TLS" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png 1160w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-300x121.png 300w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1024x413.png 1024w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-768x310.png 768w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-380x153.png 380w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-800x323.png 800w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-760x307.png 760w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-600x242.png 600w" data-lazy-sizes="(max-width: 1160px) 100vw, 1160px" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png" /><noscript><img width="1160" height="468" src="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png" class="pk-lazyload-disabled wp-post-image" alt="Configure Ingress TLS" srcset="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls.png 1160w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-300x121.png 300w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1024x413.png 1024w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-768x310.png 768w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-380x153.png 380w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-800x323.png 800w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-760x307.png 760w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-600x242.png 600w" sizes="(max-width: 1160px) 100vw, 1160px" /></noscript> </a>
+</figure>
+</div>
+</div>
+</section>
+<div class="entry-container">
+<div class="entry-sidebar-wrap">
+<div class="entry-sidebar">
+<div class="post-sidebar-shares">
+<div class="post-sidebar-inner">
+<div class="pk-share-buttons-wrap pk-share-buttons-layout-simple pk-share-buttons-scheme-bold pk-share-buttons-has-total-counts pk-share-buttons-post_sidebar pk-share-buttons-mode-php pk-share-buttons-mode-rest" data-post-id="13178" data-share-url="https://devopscube.com/configure-ingress-tls-kubernetes/">
+<div class="pk-share-buttons-total">
+<div class="pk-share-buttons-caption">
+<div class="pk-share-buttons-count cs-font-primary"> 6</div>
+<div class="pk-share-buttons-label cs-font-secondary">Shares</div>
+</div>
+</div>
+<div class="pk-share-buttons-items">
+<div class="pk-share-buttons-item pk-share-buttons-facebook pk-share-buttons-no-count" data-id="facebook">
+<a href="https://www.facebook.com/sharer.php?u=https://devopscube.com/configure-ingress-tls-kubernetes/" class="pk-share-buttons-link" target="_blank">
+<i class="pk-share-buttons-icon pk-icon pk-icon-facebook"></i>
+</a>
+</div>
+<div class="pk-share-buttons-item pk-share-buttons-twitter pk-share-buttons-no-count" data-id="twitter">
+<a href="https://twitter.com/share?&text=How%20To%20Configure%20Ingress%20TLS%2FSSL%20Certificates%20in%20Kubernetes&via=devopscube&url=https://devopscube.com/configure-ingress-tls-kubernetes/" class="pk-share-buttons-link" target="_blank">
+<i class="pk-share-buttons-icon pk-icon pk-icon-twitter"></i>
+</a>
+</div>
+<div class="pk-share-buttons-item pk-share-buttons-linkedin pk-share-buttons-no-count" data-id="linkedin">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://devopscube.com/configure-ingress-tls-kubernetes/" class="pk-share-buttons-link" target="_blank">
+<i class="pk-share-buttons-icon pk-icon pk-icon-linkedin"></i>
+</a>
+</div>
+<div class="pk-share-buttons-item pk-share-buttons-mail pk-share-buttons-no-count" data-id="mail">
+<a href="/cdn-cgi/l/email-protection#023d717760686761763f4a6d75273032566d273032416d6c646b657770672730324b6c6570677171273032564e5127304451514e273032416770766b646b61637667712730326b6c27303249776067706c6776677124606d667b3f4a6d75273032566d273032416d6c646b657770672730324b6c6570677171273032564e5127304451514e273032416770766b646b61637667712730326b6c27303249776067706c677667712730326a76767271382d2d6667746d7271617760672c616d6f2d616d6c646b657770672f6b6c65706771712f766e712f69776067706c677667712d" class="pk-share-buttons-link" target="_blank">
+<i class="pk-share-buttons-icon pk-icon pk-icon-mail"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="entry-content-wrap">
+<div class="entry-content">
+<p>In this blog, you will learn how to configure ingress TLS certificates for Kubernetes Ingress resources.</p>
+<p>This blog is based on an actual demo done using <code>demo.mlopshub.com</code> public DNS and its self-signed certificate. If you do not have a domain name, you can use the workstation host file for DNS resolution or the curl resolve command.</p>
+<blockquote class="wp-block-quote"><p><strong>Note</strong>: SSL &amp; TLS are the same. SSL is the old name. TLS is the updated version of SSL. Dont get confused 🙂</p></blockquote>
+<h2 id="prerequisites-and-assumptions" class="has-text-align-center">Prerequisites and Assumptions</h2>
+<p>For this blog, the assumption is you have a working ingress controller setup, and you want to configure TLS for your ingress resource.</p>
+<p>This blog is part of the Kubernetes Ingress series. If you do not have an ingress controllers setup or want to understand Kubernetes ingress concepts in detail, please go through the following blogs first.</p>
+<ol class="is-style-cnvs-list-styled"><li><a href="https://devopscube.com/kubernetes-ingress-tutorial/" data-type="URL" data-id="https://devopscube.com/kubernetes-ingress-tutorial/" target="_blank" rel="noreferrer noopener">Kubernetes Ingress Tutorial </a>&#8211; Covers all Ingress concepts</li><li><a href="https://devopscube.com/setup-ingress-kubernetes-nginx-controller/" data-type="URL" data-id="https://devopscube.com/setup-ingress-kubernetes-nginx-controller/" target="_blank" rel="noreferrer noopener">Setup Nginx Kubernetes Ingress controller</a> &#8211; Detailed guide on ingress controller</li></ol>
+<h2 id="obtaining-kubernetes-ingress-ssl-tls-certificates" class="has-text-align-center">Obtaining Kubernetes Ingress SSL/TLS Certificates</h2>
+<p>The basic requirement for ingress TLS is a <strong>TLS/SSL certificate</strong>. You can obtain these certificates in the following ways.</p>
+<ol class="is-style-cnvs-list-styled"><li><strong>Self-Signed Certificates:</strong> TLS certificate created and signed by our own Certificage Authority. It is great optionfor development environments where you can share the rootCA with the team so that browsers can trust the certificate. Check out <a href="https://devopscube.com/create-self-signed-certificates-openssl/" data-type="URL" data-id="https://devopscube.com/create-self-signed-certificates-openssl/" target="_blank" rel="noreferrer noopener">create self-signed certificate</a> blog to create your own certificates.</li><li><strong>Purchase an SSL Certificate:</strong>&nbsp;You need to buy an SSL certificate from a well-known certificate authority trusted by browsers &amp; operating systems for production use cases. Check out the&nbsp;<a href="https://devopscube.com/recommends/top-ssl-companies/" target="_blank" rel="noreferrer noopener">top SSL Providers</a>&nbsp;for more information.</li><li><strong>Use Letsencrpt Certificate:</strong>&nbsp;<a href="https://letsencrypt.org/" target="_blank" rel="noreferrer noopener">Letsencrypt</a>&nbsp;is a non-profit trusted certificate authority that provides free TLS certificates.</li></ol>
+<p>Every SSL certificate comes with an expiry date. So you need to rotate the certificate before it expires. For example, Letsecrypt certificates expire every three months. I will talk about automated certificate rotation towards the end of the article.</p>
+<p>Also, if you are working on an internal application, most organizations have their own PKI infrastructure for providing SSL certificates for internal applications. You can request the network/security team to provide the certificates.</p>
+<h2 id="how-does-ingress-tls-ssl-work" class="has-text-align-center">How Does Ingress TLS/SSL Work?</h2>
+<p>Adding TLS to ingress is pretty simple. All you have to do is,</p>
+<ol class="is-style-cnvs-list-styled"><li>Create a Kubernetes secret with <code>server.crt</code> certificate and server.key private key file.</li><li>Add the TLS block to the ingress resource with the exact hostname used to generate cert that matches the TLS certificate.</li></ol>
+<p>SSL is<strong> handled by the ingress controller, not the ingress resource</strong>. Meaning, when you add TLS certificates to the ingress resource as a kubernetes secret, the ingress controller access it and makes it part of its configuration.</p>
+<p>For example, in the Nginx controller, the <strong>SSL certificates are dynamically handled</strong> by the following block in <code>nginx.conf</code></p>
+<pre class="wp-block-code"><code>ssl_certificate_by_lua_block {
+			certificate.call()
+		}</code></pre>
+<p>The following diagram shows the high-level ingress TLS workflow.</p>
+<figure class="wp-block-image size-full nb"><a href="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1.png"><img width="777" height="870" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20777%20870'%3E%3C/svg%3E" alt="ingress tls 1" class="wp-image-13256" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1.png 777w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-268x300.png 268w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-768x860.png 768w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-380x425.png 380w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-760x851.png 760w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-536x600.png 536w" data-lazy-sizes="(max-width: 777px) 100vw, 777px" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1.png"><noscript><img width="777" height="870" src="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1.png" alt="ingress tls 1" class="wp-image-13256" srcset="https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1.png 777w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-268x300.png 268w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-768x860.png 768w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-380x425.png 380w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-760x851.png 760w, https://devopscube.com/wp-content/uploads/2022/03/ingress-tls-1-536x600.png 536w" sizes="(max-width: 777px) 100vw, 777px"></noscript></a></figure>
+<h2 id="configure-ingress-tls-ssl-certificates" class="has-text-align-center">Configure Ingress TLS/SSL Certificates</h2>
+<p>Let&#8217;s look a the steps in configuring TLS in ingress.</p>
+<h4 id="deploy-a-test-application">Deploy a Test Application</h4>
+<p>Let&#8217;s begin by deploying a sample application. We will use this application to test our ingress TLS.</p>
+<p>Create a dev namespace. </p>
+<pre class="wp-block-code"><code>kubectl create -n dev</code></pre>
+<p>Save the following YAML as <code>hello-app.yaml</code>. It has a deployment and service object.</p>
+<pre class="wp-block-code"><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-app
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: hello
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+      - name: hello
+        image: "gcr.io/google-samples/hello-app:2.0"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-service
+  namespace: dev
+  labels:
+    app: hello
+spec:
+  type: ClusterIP
+  selector:
+    app: hello
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+</code></pre>
+<p>Deploy the test application.</p>
+<pre class="wp-block-code"><code>kubectl apply -f hello-app.yaml </code></pre>
+<h4 id="create-a-kubernetes-tls-secret">Create a Kubernetes TLS Secret</h4>
+<blockquote class="wp-block-quote"><p><strong>Note</strong>: Here the assumption is you have the <code>server.crt</code> and <code>server.key</code> SSL files from a Certificate authority or your organization or self-signed.</p></blockquote>
+<p>The SSL certificate should be added as a Kubernetes secret. It will be then referred to the ingress resources TLS block.</p>
+<p>Let&#8217;s create a Kubernetes secret of type TLS with the <code>server.crt</code> and <code>server.key</code> files (SSL certificates). We are creating the secret in the dev namespace where we have a hello app deployment.</p>
+<p>Execute the following kubectl command from the directory where you have the <code>server.crt</code> and key files or provide the absolute path of the files . <code>hello-app-tls</code> is an arbitrary name. </p>
+<pre class="wp-block-code"><code>kubectl create secret tls hello-app-tls \
+    --namespace dev \
+    --key server.key \
+    --cert server.crt</code></pre>
+<p>Following is the equivalent <code>YAML</code> file where you have to add the crt and key file contents.</p>
+<pre class="wp-block-code"><code>apiVersion: v1
+kind: Secret
+metadata:
+  name: hello-app-tls
+  namespace: dev
+type: kubernetes.io/tls
+data:
+  server.crt: |
+       &lt;crt contents here&gt;
+  server.key: |
+       &lt;private key contents here&gt;</code></pre>
+<h4 id="add-tls-block-to-ingress-object">Add TLS block to Ingress Object</h4>
+<p>The ingress resource with TLS has to be created in the same namespace where you have the application deployed. So we create the<strong> example ingress TLS resource</strong> in <code>dev</code> namespace.</p>
+<p>Save the following YAML as <code>ingress.yaml</code>. Replace <code>demo.mlopshub.com</code> with your hostname. </p>
+<pre class="wp-block-code"><code>apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-app-ingress
+  namespace: dev
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - demo.mlopshub.com
+    secretName: hello-app-tls
+  rules:
+  - host: "demo.mlopshub.com"
+    http:
+      paths:
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service:
+              name: hello-service
+              port:
+                number: 80</code></pre>
+<p>As you can see, I have <strong>added the TLS block</strong> with the hostname (<code>demo.mlopshub.com</code>) and tls secret we created in the previous step. I have created the self-signed TLS certificate with <code>emo.mlopshub.com</code> domain.</p>
+<pre class="wp-block-code"><code>tls:
+  - hosts:
+    - demo.mlopshub.com
+    secretName: hello-app-tls</code></pre>
+<p>The host in the TLS block and rules block should match.</p>
+<p>🎉 Congratulations you have deployed Ingress with TLS.</p>
+<h2 id="validate-ingress-tls" class="has-text-align-center">Validate Ingress TLS</h2>
+<p>You can validate the Ingress TLS using the curl command as well as the browser.</p>
+<p>From the CLI, run the curl command as given below with your domain name.</p>
+<pre class="wp-block-code"><code>curl https://demo.mlopshub.com -kv</code></pre>
+<p>In the output, under server certificate, you can validate the certificate details as shown below.</p>
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><a href="https://devopscube.com/wp-content/uploads/2022/03/image-13.png"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20539%20336'%3E%3C/svg%3E" alt="validate ingress TLS using curl" class="wp-image-13230" width="539" height="336" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2022/03/image-13.png 561w, https://devopscube.com/wp-content/uploads/2022/03/image-13-300x187.png 300w, https://devopscube.com/wp-content/uploads/2022/03/image-13-380x237.png 380w" data-lazy-sizes="(max-width: 539px) 100vw, 539px" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/03/image-13.png" /><noscript><img src="https://devopscube.com/wp-content/uploads/2022/03/image-13.png" alt="validate ingress TLS using curl" class="wp-image-13230" width="539" height="336" srcset="https://devopscube.com/wp-content/uploads/2022/03/image-13.png 561w, https://devopscube.com/wp-content/uploads/2022/03/image-13-300x187.png 300w, https://devopscube.com/wp-content/uploads/2022/03/image-13-380x237.png 380w" sizes="(max-width: 539px) 100vw, 539px" /></noscript></a></figure></div>
+<p>From the browser, access the domain and click the Lock icon to view the certificate details. If you have a valid certificate, you will see the information as shown below. </p>
+<div class="wp-block-image"><figure class="aligncenter size-full"><a href="https://devopscube.com/wp-content/uploads/2022/03/image-11.png"><img width="472" height="235" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20472%20235'%3E%3C/svg%3E" alt="validate ingress TLS using the browser." class="wp-image-13227" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2022/03/image-11.png 472w, https://devopscube.com/wp-content/uploads/2022/03/image-11-300x149.png 300w, https://devopscube.com/wp-content/uploads/2022/03/image-11-380x189.png 380w" data-lazy-sizes="(max-width: 472px) 100vw, 472px" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/03/image-11.png" /><noscript><img width="472" height="235" src="https://devopscube.com/wp-content/uploads/2022/03/image-11.png" alt="validate ingress TLS using the browser." class="wp-image-13227" srcset="https://devopscube.com/wp-content/uploads/2022/03/image-11.png 472w, https://devopscube.com/wp-content/uploads/2022/03/image-11-300x149.png 300w, https://devopscube.com/wp-content/uploads/2022/03/image-11-380x189.png 380w" sizes="(max-width: 472px) 100vw, 472px" /></noscript></a></figure></div>
+<p>If you don&#8217;t have a valid certificate or if the ingress TLS configuration is wrong, you will see &#8220;Your connection is not private&#8221; security warning and if you check the certificate details, you will see the certificate name as &#8220;<strong>Kubernetes Ingress Controller Fake Certificate</strong>&#8220;.</p>
+<div class="wp-block-image"><figure class="aligncenter size-full"><a href="https://devopscube.com/wp-content/uploads/2022/03/image-12.png"><img width="477" height="243" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20477%20243'%3E%3C/svg%3E" alt="Kubernetes Ingress Controller Fake Certificate issue" class="wp-image-13228" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2022/03/image-12.png 477w, https://devopscube.com/wp-content/uploads/2022/03/image-12-300x153.png 300w, https://devopscube.com/wp-content/uploads/2022/03/image-12-380x194.png 380w" data-lazy-sizes="(max-width: 477px) 100vw, 477px" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/03/image-12.png" /><noscript><img width="477" height="243" src="https://devopscube.com/wp-content/uploads/2022/03/image-12.png" alt="Kubernetes Ingress Controller Fake Certificate issue" class="wp-image-13228" srcset="https://devopscube.com/wp-content/uploads/2022/03/image-12.png 477w, https://devopscube.com/wp-content/uploads/2022/03/image-12-300x153.png 300w, https://devopscube.com/wp-content/uploads/2022/03/image-12-380x194.png 380w" sizes="(max-width: 477px) 100vw, 477px" /></noscript></a></figure></div>
+<p><strong>Kubernetes Ingress Controller Fake Certificate</strong> is the default SSL certificate that comes with the Nginx ingress controller. If you check the <code>nginx.conf of the Nginx</code> controller, you will see the configured default certificates as shown below.</p>
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><a href="https://devopscube.com/wp-content/uploads/2022/03/image-10.png"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20549%20176'%3E%3C/svg%3E" alt="default Nginx ingress SSL certificates." class="wp-image-13216" width="549" height="176" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2022/03/image-10.png 764w, https://devopscube.com/wp-content/uploads/2022/03/image-10-300x96.png 300w, https://devopscube.com/wp-content/uploads/2022/03/image-10-380x122.png 380w, https://devopscube.com/wp-content/uploads/2022/03/image-10-760x244.png 760w, https://devopscube.com/wp-content/uploads/2022/03/image-10-600x192.png 600w" data-lazy-sizes="(max-width: 549px) 100vw, 549px" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/03/image-10.png" /><noscript><img src="https://devopscube.com/wp-content/uploads/2022/03/image-10.png" alt="default Nginx ingress SSL certificates." class="wp-image-13216" width="549" height="176" srcset="https://devopscube.com/wp-content/uploads/2022/03/image-10.png 764w, https://devopscube.com/wp-content/uploads/2022/03/image-10-300x96.png 300w, https://devopscube.com/wp-content/uploads/2022/03/image-10-380x122.png 380w, https://devopscube.com/wp-content/uploads/2022/03/image-10-760x244.png 760w, https://devopscube.com/wp-content/uploads/2022/03/image-10-600x192.png 600w" sizes="(max-width: 549px) 100vw, 549px" /></noscript></a></figure></div>
+<h2 id="ingress-ssl-termination" class="has-text-align-center">Ingress SSL Termination</h2>
+<p>By default, SSL gets terminated in ingress the controller</p>
+<p>So all the traffic from the controller to the pod will be without TLS (decrypted traffic)</p>
+<p>If you want full SSL, you can add the supported annotation by the ingress controller you are using. For example, In the Nginx ingress controller, to allow SSL traffic till the application, you can use the<code> nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"</code> annotation. For this, your application should have SSL configured.</p>
+<h2 id="conclusion" class="has-text-align-center">Conclusion</h2>
+<p>In this blog, we have learned to configure ingress TLS certificates with <strong>kubernetes&nbsp;</strong>ingress&nbsp;TLS&nbsp;<strong>example</strong></p>
+<p>Also, you can <strong>configure more TLS parameters using annotations</strong>. The annotations differ between different ingress controllers.</p>
+<p>Also, if you are learning Kubernetes, you can check out my <a href="https://devopscube.com/kubernetes-tutorials-beginners/" data-type="URL" data-id="https://devopscube.com/kubernetes-tutorials-beginners/" target="_blank" rel="noreferrer noopener">Kubernetes tutorials for beginners</a>.</p>
+<p>Drop a comment if you need any clarification or tips to share.</p>
+</div>
+<div class="pk-share-buttons-wrap pk-share-buttons-layout-default pk-share-buttons-scheme-bold-bg pk-share-buttons-has-counts pk-share-buttons-has-total-counts pk-share-buttons-after-post pk-share-buttons-mode-php pk-share-buttons-mode-rest" data-post-id="13178" data-share-url="https://devopscube.com/configure-ingress-tls-kubernetes/">
+<div class="pk-share-buttons-total">
+<div class="pk-share-buttons-count cs-font-primary">6 Shares:</div>
+</div>
+<div class="pk-share-buttons-items">
+<div class="pk-share-buttons-item pk-share-buttons-facebook pk-share-buttons-item-count" data-id="facebook">
+<a href="https://www.facebook.com/sharer.php?u=https://devopscube.com/configure-ingress-tls-kubernetes/" class="pk-share-buttons-link" target="_blank">
+<i class="pk-share-buttons-icon pk-icon pk-icon-facebook"></i>
+<span class="pk-share-buttons-label pk-font-primary">Share</span>
+
+<span class="pk-share-buttons-count pk-font-secondary">6</span>
+</a>
+</div>
+<div class="pk-share-buttons-item pk-share-buttons-twitter pk-share-buttons-no-count" data-id="twitter">
+<a href="https://twitter.com/share?&text=How%20To%20Configure%20Ingress%20TLS%2FSSL%20Certificates%20in%20Kubernetes&via=devopscube&url=https://devopscube.com/configure-ingress-tls-kubernetes/" class="pk-share-buttons-link" target="_blank">
+<i class="pk-share-buttons-icon pk-icon pk-icon-twitter"></i>
+<span class="pk-share-buttons-label pk-font-primary">Tweet</span>
+<span class="pk-share-buttons-count pk-font-secondary">0</span>
+</a>
+</div>
+<div class="pk-share-buttons-item pk-share-buttons-mail pk-share-buttons-no-count" data-id="mail">
+<a href="/cdn-cgi/l/email-protection#56692523343c3335226b1e39217364660239736466153938303f312324337364661f383124332525736466021a0573641005051a736466153324223f303f35372233257364663f387364661d233433243833223325703439322f6b1e39217364660239736466153938303f312324337364661f383124332525736466021a0573641005051a736466153324223f303f35372233257364663f387364661d2334332438332233257364663e222226256c7979323320392625352334337835393b79353938303f312324337b3f3831243325257b223a257b3d23343324383322332579" class="pk-share-buttons-link" target="_blank">
+<i class="pk-share-buttons-icon pk-icon pk-icon-mail"></i>
+<span class="pk-share-buttons-label pk-font-primary">Share</span>
+<span class="pk-share-buttons-count pk-font-secondary">0</span>
+</a>
+</div>
+<div class="pk-share-buttons-item pk-share-buttons-linkedin pk-share-buttons-no-count" data-id="linkedin">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://devopscube.com/configure-ingress-tls-kubernetes/" class="pk-share-buttons-link" target="_blank">
+<i class="pk-share-buttons-icon pk-icon pk-icon-linkedin"></i>
+<span class="pk-share-buttons-label pk-font-primary">Share</span>
+<span class="pk-share-buttons-count pk-font-secondary">0</span>
+</a>
+</div>
+</div>
+</div>
+<section class="post-author">
+<div class="authors-compact">
+<div class="author-wrap">
+<div class="author">
+<div class="author-avatar">
+<a href="https://devopscube.com/author/bibinwilson/" rel="author">
+<picture data-del="avatar" class="avatar pp-user-avatar avatar-120 photo">
+<source type="image/webp" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2019/11/unnamed-150x150.jpg.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20120%20120&#039;%3E%3C/svg%3E" />
+<img data-del="avatar" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20120%20120&#039;%3E%3C/svg%3E" height="120" width="120" data-lazy-src="https://devopscube.com/wp-content/uploads/2019/11/unnamed-150x150.jpg" />
+</picture>
+<noscript><picture data-del="avatar" class="avatar pp-user-avatar avatar-120 photo">
+<source type="image/webp" srcset="https://devopscube.com/wp-content/uploads/2019/11/unnamed-150x150.jpg.webp"/>
+<img data-del="avatar" src="https://devopscube.com/wp-content/uploads/2019/11/unnamed-150x150.jpg" height="120" width="120"/>
+</picture>
+</noscript> </a>
+</div>
+<div class="author-description">
+<h5 class="title-author">
+<span class="fn">
+<a href="https://devopscube.com/author/bibinwilson/" rel="author">
+Bibin Wilson </a>
+</span>
+</h5>
+<p class="note">An author, blogger, and DevOps practitioner. In his spare time, he loves to try out the latest open source technologies. He works as an Associate Technical Architect. Also, the opinions expressed here are solely his own and do not express the views or opinions of his previous or current employer.</p>
+<div class="pk-author-social-links pk-social-links-wrap pk-social-links-template-default">
+<div class="pk-social-links-items">
+<div class="pk-social-links-item pk-social-links-website">
+<a href="https://devopscube.com/author/bibinwilson/" class="pk-social-links-link" target="_blank" rel="nofollow">
+<i class="pk-icon pk-icon-website"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-twitter">
+<a href="https://twitter.com/bibinwillson" class="pk-social-links-link" target="_blank" rel="nofollow">
+<i class="pk-icon pk-icon-twitter"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-instagram">
+<a href="https://www.instagram.com/devopscube/" class="pk-social-links-link" target="_blank" rel="nofollow">
+<i class="pk-icon pk-icon-instagram"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-youtube">
+<a href="https://www.youtube.com/devopscube" class="pk-social-links-link" target="_blank" rel="nofollow">
+<i class="pk-icon pk-icon-youtube"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-github">
+<a href="https://github.com/bibinwilson" class="pk-social-links-link" target="_blank" rel="nofollow">
+<i class="pk-icon pk-icon-github"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-linkedin">
+<a href="https://www.linkedin.com/in/bibinwilson/" class="pk-social-links-link" target="_blank" rel="nofollow">
+<i class="pk-icon pk-icon-linkedin"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-rss">
+<a href="http://devopscube" class="pk-social-links-link" target="_blank" rel="nofollow">
+<i class="pk-icon pk-icon-rss"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="post-comments post-comments-button" id="comments-hide">
+<h5 class="title-block">
+2 comments </h5>
+<ol class="comment-list">
+<li id="comment-34892" class="comment even thread-even depth-1 parent">
+<article id="div-comment-34892" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt='' src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2060%2060'%3E%3C/svg%3E" data-lazy-srcset='https://secure.gravatar.com/avatar/1e8f92a193c51a94e31dfefc92c5fad8?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' data-lazy-src="https://secure.gravatar.com/avatar/1e8f92a193c51a94e31dfefc92c5fad8?s=60&#038;d=mm&#038;r=g" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/1e8f92a193c51a94e31dfefc92c5fad8?s=60&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1e8f92a193c51a94e31dfefc92c5fad8?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></noscript> <b class="fn">Rafael Martins</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://devopscube.com/configure-ingress-tls-kubernetes/#comment-34892"><time datetime="2022-06-03T18:06:43+00:00">June 3, 2022 at 6:06 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Hi Bibin, great..</p>
+<p>I made this setup, but I&#8217;m getting connection refused.</p>
+<p>My ELB on AWS is configured with both listeners , 80 and 443.</p>
+<p>I setup a self signed certificate and configured as a secret on my namespace.</p>
+<p>My ingress is also listenen on ports 80, 443</p>
+</div>
+<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-34892' data-commentid="34892" data-postid="13178" data-belowelement="div-comment-34892" data-respondelement="respond" data-replyto="Reply to Rafael Martins" aria-label='Reply to Rafael Martins'>Reply</a></div> </article>
+<ol class="children">
+<li id="comment-35007" class="comment byuser comment-author-bibinwilson bypostauthor odd alt depth-2">
+<article id="div-comment-35007" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<picture data-del="avatar" class="avatar pp-user-avatar avatar-60 photo">
+<source type="image/webp" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2019/11/unnamed-80x80.jpg.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2060%2060&#039;%3E%3C/svg%3E" />
+<img data-del="avatar" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2060%2060&#039;%3E%3C/svg%3E" height="60" width="60" data-lazy-src="https://devopscube.com/wp-content/uploads/2019/11/unnamed-80x80.jpg" />
+</picture>
+<noscript><picture data-del="avatar" class="avatar pp-user-avatar avatar-60 photo">
+<source type="image/webp" srcset="https://devopscube.com/wp-content/uploads/2019/11/unnamed-80x80.jpg.webp"/>
+<img data-del="avatar" src="https://devopscube.com/wp-content/uploads/2019/11/unnamed-80x80.jpg" height="60" width="60"/>
+</picture>
+</noscript> <b class="fn">Bibin Wilson</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://devopscube.com/configure-ingress-tls-kubernetes/#comment-35007"><time datetime="2022-06-07T14:27:48+00:00">June 7, 2022 at 2:27 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Hi Rafael, could you paste the YAML. I will take a look</p>
+</div>
+<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-35007' data-commentid="35007" data-postid="13178" data-belowelement="div-comment-35007" data-respondelement="respond" data-replyto="Reply to Bibin Wilson" aria-label='Reply to Bibin Wilson'>Reply</a></div> </article>
+</li>
+</ol>
+</li>
+</ol>
+<div id="respond" class="comment-respond">
+<h5 id="reply-title" class="title-block title-comment-reply">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/configure-ingress-tls-kubernetes/#respond" style="display:none;">Cancel reply</a></small></h5><form action="https://devopscube.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message" aria-hidden="true">Required fields are marked <span class="required" aria-hidden="true">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required" aria-hidden="true">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required" aria-hidden="true">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required" aria-hidden="true">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='13178' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="08ee1f1863" /></p><p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="157" /><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form> </div>
+</div>
+<div class="post-comments-show" id="comments">
+<button>View Comments (2)</button>
+</div>
+</div>
+</div>
+</article>
+<section class="post-archive archive-related">
+<div class="archive-wrap">
+<div class="title-block-wrap">
+<h5 class="title-block">
+You May Also Like </h5>
+</div>
+<div class="archive-main archive-list  archive-heading-medium archive-borders-disabled archive-shadow-enabled archive-scale-disabled">
+<article class="entry-preview post-1660 post type-post status-publish format-standard has-post-thumbnail category-jenkins category-kubernetes">
+<div class="post-outer">
+<div class="post-inner">
+<div class="entry-thumbnail">
+<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
+<div class="cs-overlay-background">
+<picture class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" loading="lazy">
+<source type="image/webp" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-560x336.png.webp 560w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-300x180.png.webp 300w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-600x360.png.webp 600w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-1120x672.png.webp 1120w" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20560%20336&#039;%3E%3C/svg%3E" data-lazy-sizes="(max-width: 560px) 100vw, 560px" />
+<img width="560" height="336" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20560%20336&#039;%3E%3C/svg%3E" alt="Setup Jenkins Build Agents on Kubernetes Cluster" loading="lazy" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-560x336.png 560w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-300x180.png 300w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-600x360.png 600w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-1120x672.png 1120w" data-lazy-sizes="(max-width: 560px) 100vw, 560px" data-lazy-src="https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-560x336.png" />
+</picture>
+<noscript><picture class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" loading="lazy">
+<source type="image/webp" srcset="https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-560x336.png.webp 560w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-300x180.png.webp 300w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-600x360.png.webp 600w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-1120x672.png.webp 1120w" sizes="(max-width: 560px) 100vw, 560px"/>
+<img width="560" height="336" src="https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-560x336.png" alt="Setup Jenkins Build Agents on Kubernetes Cluster" loading="lazy" srcset="https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-560x336.png 560w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-300x180.png 300w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-600x360.png 600w, https://devopscube.com/wp-content/uploads/2021/07/jenkins-kubernetes-agent-1120x672.png 1120w" sizes="(max-width: 560px) 100vw, 560px"/>
+</picture>
+</noscript> </div>
+<div class="cs-overlay-content">
+<span class="read-more">Read More</span>
+</div>
+<a href="https://devopscube.com/jenkins-build-agents-kubernetes/" class="cs-overlay-link"></a>
+</div>
+</div>
+</div>
+<div class="post-inner">
+<div class="meta-category"><a class="category-style" href="https://devopscube.com/category/devops/cicd/jenkins/"><span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">J</span><span class="label">JENKINS</span></a></div> <header class="entry-header">
+<h2 class="entry-title"><a href="https://devopscube.com/jenkins-build-agents-kubernetes/" rel="bookmark">How to Setup Jenkins Build Agents on Kubernetes Pods</a></h2><ul class="post-meta"><li class="meta-author"><span class="by">by</span><span class="author"><a class="url fn n" href="https://devopscube.com/author/bibinwilson/" title="View all posts by Bibin Wilson">Bibin Wilson</a></span></li><li class="meta-date">August 2, 2021</li></ul> </header>
+<div class="entry-details">
+<div class="entry-excerpt">
+In this Jenkins tutorial, I explained the detailed steps to set up Jenkins master and scale Jenkins build&hellip; </div>
+</div>
+</div>
+</div>
+</article>
+<article class="entry-preview post-3924 post type-post status-publish format-standard has-post-thumbnail category-kubernetes">
+<div class="post-outer">
+<div class="post-inner">
+<div class="entry-thumbnail">
+<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
+<div class="cs-overlay-background">
+<picture class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" loading="lazy">
+<source type="image/webp" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-560x336.png.webp 560w, https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-300x180.png.webp 300w" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20560%20336&#039;%3E%3C/svg%3E" data-lazy-sizes="(max-width: 560px) 100vw, 560px" />
+<img width="560" height="336" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20560%20336&#039;%3E%3C/svg%3E" alt="Kubernetes certification tips (CKA/CKAD)" loading="lazy" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-560x336.png 560w, https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-300x180.png 300w" data-lazy-sizes="(max-width: 560px) 100vw, 560px" data-lazy-src="https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-560x336.png" />
+</picture>
+<noscript><picture class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" loading="lazy">
+<source type="image/webp" srcset="https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-560x336.png.webp 560w, https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-300x180.png.webp 300w" sizes="(max-width: 560px) 100vw, 560px"/>
+<img width="560" height="336" src="https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-560x336.png" alt="Kubernetes certification tips (CKA/CKAD)" loading="lazy" srcset="https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-560x336.png 560w, https://devopscube.com/wp-content/uploads/2019/08/cka-certification-tips-1-300x180.png 300w" sizes="(max-width: 560px) 100vw, 560px"/>
+</picture>
+</noscript> </div>
+<div class="cs-overlay-content">
+<span class="read-more">Read More</span>
+</div>
+<a href="https://devopscube.com/kubernetes-certification-tips/" class="cs-overlay-link"></a>
+</div>
+</div>
+</div>
+<div class="post-inner">
+<div class="meta-category"><a class="category-style" href="https://devopscube.com/category/kubernetes/"><span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">K</span><span class="label">KUBERNETES</span></a></div> <header class="entry-header">
+<h2 class="entry-title"><a href="https://devopscube.com/kubernetes-certification-tips/" rel="bookmark">Kubernetes Certification Tips from a Kubernetes Certified Administrator</a></h2><ul class="post-meta"><li class="meta-author"><span class="by">by</span><span class="author"><a class="url fn n" href="https://devopscube.com/author/devopscube/" title="View all posts by devopscube">devopscube</a></span></li><li class="meta-date">August 20, 2019</li></ul> </header>
+<div class="entry-details">
+<div class="entry-excerpt">
+To help DevopsCube readers, we have interviewed Pradeep Pandey, a certified Kubernetes administrator and developer for tips &amp;&hellip; </div>
+</div>
+</div>
+</div>
+</article>
+<article class="entry-preview post-13471 post type-post status-publish format-standard has-post-thumbnail category-kubernetes tag-how-kubernetes-work tag-kubernetes">
+<div class="post-outer">
+<div class="post-inner">
+<div class="entry-thumbnail">
+<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
+<div class="cs-overlay-background">
+<img width="560" height="336" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20560%20336'%3E%3C/svg%3E" class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" alt="Kubernetes Pod Priority, PriorityClass" loading="lazy" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2022/04/pod-priority-560x336.png 560w, https://devopscube.com/wp-content/uploads/2022/04/pod-priority-300x180.png 300w, https://devopscube.com/wp-content/uploads/2022/04/pod-priority-600x360.png 600w" data-lazy-sizes="(max-width: 560px) 100vw, 560px" data-lazy-src="https://devopscube.com/wp-content/uploads/2022/04/pod-priority-560x336.png" /><noscript><img width="560" height="336" src="https://devopscube.com/wp-content/uploads/2022/04/pod-priority-560x336.png" class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" alt="Kubernetes Pod Priority, PriorityClass" loading="lazy" srcset="https://devopscube.com/wp-content/uploads/2022/04/pod-priority-560x336.png 560w, https://devopscube.com/wp-content/uploads/2022/04/pod-priority-300x180.png 300w, https://devopscube.com/wp-content/uploads/2022/04/pod-priority-600x360.png 600w" sizes="(max-width: 560px) 100vw, 560px" /></noscript> </div>
+<div class="cs-overlay-content">
+<span class="read-more">Read More</span>
+</div>
+<a href="https://devopscube.com/pod-priorityclass-preemption/" class="cs-overlay-link"></a>
+</div>
+</div>
+</div>
+<div class="post-inner">
+<div class="meta-category"><a class="category-style" href="https://devopscube.com/category/kubernetes/"><span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">K</span><span class="label">KUBERNETES</span></a></div> <header class="entry-header">
+<h2 class="entry-title"><a href="https://devopscube.com/pod-priorityclass-preemption/" rel="bookmark">Kubernetes Pod Priority, PriorityClass, and Preemption Explained</a></h2><ul class="post-meta"><li class="meta-author"><span class="by">by</span><span class="author"><a class="url fn n" href="https://devopscube.com/author/bibinwilson/" title="View all posts by Bibin Wilson">Bibin Wilson</a></span></li><li class="meta-date">April 23, 2022</li></ul> </header>
+<div class="entry-details">
+<div class="entry-excerpt">
+In this blog, you will learn about important Kubernetes pod scheduling concepts such as Pod priority, Preemption, and&hellip; </div>
+</div>
+</div>
+</div>
+</article>
+<article class="entry-preview post-4048 post type-post status-publish format-standard has-post-thumbnail category-kubernetes">
+<div class="post-outer">
+<div class="post-inner">
+<div class="entry-thumbnail">
+<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
+<div class="cs-overlay-background">
+<picture class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" loading="lazy">
+<source type="image/webp" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-560x336.png.webp 560w, https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-300x180.png.webp 300w, https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-600x360.png.webp 600w" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20560%20336&#039;%3E%3C/svg%3E" data-lazy-sizes="(max-width: 560px) 100vw, 560px" />
+<img width="560" height="336" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20560%20336&#039;%3E%3C/svg%3E" alt="Kubernetes Ingress Tutorial" loading="lazy" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-560x336.png 560w, https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-300x180.png 300w, https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-600x360.png 600w" data-lazy-sizes="(max-width: 560px) 100vw, 560px" data-lazy-src="https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-560x336.png" />
+</picture>
+<noscript><picture class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" loading="lazy">
+<source type="image/webp" srcset="https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-560x336.png.webp 560w, https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-300x180.png.webp 300w, https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-600x360.png.webp 600w" sizes="(max-width: 560px) 100vw, 560px"/>
+<img width="560" height="336" src="https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-560x336.png" alt="Kubernetes Ingress Tutorial" loading="lazy" srcset="https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-560x336.png 560w, https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-300x180.png 300w, https://devopscube.com/wp-content/uploads/2019/04/kubernetes-INgress-1-600x360.png 600w" sizes="(max-width: 560px) 100vw, 560px"/>
+</picture>
+</noscript> </div>
+<div class="cs-overlay-content">
+<span class="read-more">Read More</span>
+</div>
+<a href="https://devopscube.com/kubernetes-ingress-tutorial/" class="cs-overlay-link"></a>
+</div>
+</div>
+</div>
+<div class="post-inner">
+<div class="meta-category"><a class="category-style" href="https://devopscube.com/category/kubernetes/"><span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">K</span><span class="label">KUBERNETES</span></a></div> <header class="entry-header">
+<h2 class="entry-title"><a href="https://devopscube.com/kubernetes-ingress-tutorial/" rel="bookmark">Kubernetes Ingress Tutorial For Beginners</a></h2><ul class="post-meta"><li class="meta-author"><span class="by">by</span><span class="author"><a class="url fn n" href="https://devopscube.com/author/bibinwilson/" title="View all posts by Bibin Wilson">Bibin Wilson</a></span></li><li class="meta-date">March 4, 2022</li></ul> </header>
+<div class="entry-details">
+<div class="entry-excerpt">
+In this Kubernetes ingress tutorial, you will learn the basic concepts of ingress, the native ingress resource object,&hellip; </div>
+</div>
+</div>
+</div>
+</article>
+<article class="entry-preview post-11593 post type-post status-publish format-standard has-post-thumbnail category-kubernetes">
+<div class="post-outer">
+<div class="post-inner">
+<div class="entry-thumbnail">
+<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
+<div class="cs-overlay-background">
+<picture class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" loading="lazy">
+<source type="image/webp" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2021/12/EFK-560x336.png.webp 560w, https://devopscube.com/wp-content/uploads/2021/12/EFK-300x180.png.webp 300w, https://devopscube.com/wp-content/uploads/2021/12/EFK-600x360.png.webp 600w" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20560%20336&#039;%3E%3C/svg%3E" data-lazy-sizes="(max-width: 560px) 100vw, 560px" />
+<img width="560" height="336" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20560%20336&#039;%3E%3C/svg%3E" alt="In this Kubernetes tutorial, you’ll learn how to setup EFK stack on Kubernetes cluster for log streaming, log analysis, and log monitoring." loading="lazy" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2021/12/EFK-560x336.png 560w, https://devopscube.com/wp-content/uploads/2021/12/EFK-300x180.png 300w, https://devopscube.com/wp-content/uploads/2021/12/EFK-600x360.png 600w" data-lazy-sizes="(max-width: 560px) 100vw, 560px" data-lazy-src="https://devopscube.com/wp-content/uploads/2021/12/EFK-560x336.png" />
+</picture>
+<noscript><picture class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" loading="lazy">
+<source type="image/webp" srcset="https://devopscube.com/wp-content/uploads/2021/12/EFK-560x336.png.webp 560w, https://devopscube.com/wp-content/uploads/2021/12/EFK-300x180.png.webp 300w, https://devopscube.com/wp-content/uploads/2021/12/EFK-600x360.png.webp 600w" sizes="(max-width: 560px) 100vw, 560px"/>
+<img width="560" height="336" src="https://devopscube.com/wp-content/uploads/2021/12/EFK-560x336.png" alt="In this Kubernetes tutorial, you’ll learn how to setup EFK stack on Kubernetes cluster for log streaming, log analysis, and log monitoring." loading="lazy" srcset="https://devopscube.com/wp-content/uploads/2021/12/EFK-560x336.png 560w, https://devopscube.com/wp-content/uploads/2021/12/EFK-300x180.png 300w, https://devopscube.com/wp-content/uploads/2021/12/EFK-600x360.png 600w" sizes="(max-width: 560px) 100vw, 560px"/>
+</picture>
+</noscript> </div>
+<div class="cs-overlay-content">
+<span class="read-more">Read More</span>
+</div>
+<a href="https://devopscube.com/setup-efk-stack-on-kubernetes/" class="cs-overlay-link"></a>
+</div>
+</div>
+</div>
+<div class="post-inner">
+<div class="meta-category"><a class="category-style" href="https://devopscube.com/category/kubernetes/"><span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">K</span><span class="label">KUBERNETES</span></a></div> <header class="entry-header">
+<h2 class="entry-title"><a href="https://devopscube.com/setup-efk-stack-on-kubernetes/" rel="bookmark">How to Setup EFK Stack on Kubernetes: Step by Step Guides</a></h2><ul class="post-meta"><li class="meta-author"><span class="by">by</span><span class="author"><a class="url fn n" href="https://devopscube.com/author/bibinwilson/" title="View all posts by Bibin Wilson">Bibin Wilson</a></span><span class="sep">and</span><span class="author"><a class="url fn n" href="https://devopscube.com/author/shishir/" title="View all posts by Shishir Khandelwal">Shishir Khandelwal</a></span></li><li class="meta-date">December 9, 2021</li></ul> </header>
+<div class="entry-details">
+<div class="entry-excerpt">
+In this Kubernetes tutorial, you’ll learn how to setup EFK stack on Kubernetes cluster for log streaming, log&hellip; </div>
+</div>
+</div>
+</div>
+</article>
+<article class="entry-preview post-11596 post type-post status-publish format-standard has-post-thumbnail category-kubernetes">
+<div class="post-outer">
+<div class="post-inner">
+<div class="entry-thumbnail">
+<div class="cs-overlay cs-overlay-hover cs-overlay-ratio cs-ratio-landscape" data-scheme="inverse">
+<div class="cs-overlay-background">
+<img width="560" height="336" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20560%20336'%3E%3C/svg%3E" class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" alt="Kubernetes Logging Tutorial" loading="lazy" data-lazy-srcset="https://devopscube.com/wp-content/uploads/2021/11/Kubernetes-Logging-Tutorial--560x336.png 560w, https://devopscube.com/wp-content/uploads/2021/11/Kubernetes-Logging-Tutorial--300x180.png 300w, https://devopscube.com/wp-content/uploads/2021/11/Kubernetes-Logging-Tutorial--600x360.png 600w" data-lazy-sizes="(max-width: 560px) 100vw, 560px" data-lazy-src="https://devopscube.com/wp-content/uploads/2021/11/Kubernetes-Logging-Tutorial--560x336.png" /><noscript><img width="560" height="336" src="https://devopscube.com/wp-content/uploads/2021/11/Kubernetes-Logging-Tutorial--560x336.png" class="attachment-csco-medium-alternative size-csco-medium-alternative wp-post-image" alt="Kubernetes Logging Tutorial" loading="lazy" srcset="https://devopscube.com/wp-content/uploads/2021/11/Kubernetes-Logging-Tutorial--560x336.png 560w, https://devopscube.com/wp-content/uploads/2021/11/Kubernetes-Logging-Tutorial--300x180.png 300w, https://devopscube.com/wp-content/uploads/2021/11/Kubernetes-Logging-Tutorial--600x360.png 600w" sizes="(max-width: 560px) 100vw, 560px" /></noscript> </div>
+<div class="cs-overlay-content">
+<span class="read-more">Read More</span>
+</div>
+<a href="https://devopscube.com/kubernetes-logging-tutorial/" class="cs-overlay-link"></a>
+</div>
+</div>
+</div>
+<div class="post-inner">
+<div class="meta-category"><a class="category-style" href="https://devopscube.com/category/kubernetes/"><span style="background-color:#000000" data-color="#000000" data-color-dark="#555555" class="char" data-scheme="dark">K</span><span class="label">KUBERNETES</span></a></div> <header class="entry-header">
+<h2 class="entry-title"><a href="https://devopscube.com/kubernetes-logging-tutorial/" rel="bookmark">Kubernetes Logging Tutorial For Beginners</a></h2><ul class="post-meta"><li class="meta-author"><span class="by">by</span><span class="author"><a class="url fn n" href="https://devopscube.com/author/bibinwilson/" title="View all posts by Bibin Wilson">Bibin Wilson</a></span></li><li class="meta-date">November 12, 2021</li></ul> </header>
+<div class="entry-details">
+<div class="entry-excerpt">
+In this kubernetes logging tutorial, you will learn the key concepts and workflows involved in Kubernetes cluster logging.&hellip; </div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+</div>
+</div>
+<footer id="colophon" class="site-footer">
+<div class="footer-info">
+<div class="cs-container">
+<div class="site-info">
+<div class="footer-col-info">
+<div class="footer-title">DevopsCube</div>
+<div class="footer-copyright">
+©devopscube 2022. All rights reserved. </div>
+</div>
+<div class="footer-col-social">
+<div class="pk-social-links-wrap  pk-social-links-template-nav pk-social-links-align-default pk-social-links-scheme-light pk-social-links-titles-disabled pk-social-links-counts-disabled pk-social-links-labels-disabled">
+<div class="pk-social-links-items">
+<div class="pk-social-links-item pk-social-links-facebook  pk-social-links-no-count" data-id="facebook">
+<a href="https://facebook.com/devopscube" class="pk-social-links-link" target="_blank" rel="nofollow noopener" aria-label="Facebook">
+<i class="pk-social-links-icon pk-icon pk-icon-facebook"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-twitter  pk-social-links-no-count" data-id="twitter">
+<a href="https://twitter.com/devopscube" class="pk-social-links-link" target="_blank" rel="nofollow noopener" aria-label="Twitter">
+<i class="pk-social-links-icon pk-icon pk-icon-twitter"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-github  pk-social-links-no-count" data-id="github">
+<a href="https://github.com/devopscube" class="pk-social-links-link" target="_blank" rel="nofollow noopener" aria-label="GitHub">
+<i class="pk-social-links-icon pk-icon pk-icon-github"></i>
+</a>
+</div>
+<div class="pk-social-links-item pk-social-links-linkedin  pk-social-links-no-count" data-id="linkedin">
+<a href="https://www.linkedin.com/company/13186461" class="pk-social-links-link" target="_blank" rel="nofollow noopener" aria-label="LinkedIn">
+<i class="pk-social-links-icon pk-icon pk-icon-linkedin"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-col-nav footer-col-nav-compact">
+<nav class="navbar-footer"><ul id="menu-footer" class="navbar-nav"><li id="menu-item-8157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8157"><a href="https://devopscube.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-8160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8160"><a href="https://devopscube.com/about-devopscube/">About</a></li>
+<li id="menu-item-8159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8159"><a href="https://devopscube.com/post-sitemap.xml">Site Map</a></li>
+<li id="menu-item-8158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8158"><a href="https://devopscube.com/disclaimer/">Disclaimer</a></li>
+<li id="menu-item-8161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8161"><a href="https://devopscube.com/contribute/">Contribute</a></li>
+<li id="menu-item-8162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8162"><a href="https://devopscube.com/advertise/">Advertise</a></li>
+<li id="menu-item-8169" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8169"><a href="https://devopscube.com/archives/">Archives</a></li>
+</ul></nav> </div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+<a href="#top" class="pk-scroll-to-top">
+<i class="pk-icon pk-icon-up"></i>
+</a>
+<div class="pk-mobile-share-overlay">
+</div>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/canvas/components/basic-elements/block-alert/public-block-alert.js?ver=1659359007' id='canvas-block-alert-script-js' defer></script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/canvas/components/basic-elements/block-collapsibles/public-block-collapsibles.js?ver=1659359007' id='canvas-block-collapsibles-script-js' defer></script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/canvas/components/basic-elements/block-tabs/public-block-tabs.js?ver=1659359007' id='canvas-block-tabs-script-js' defer></script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/canvas/components/posts/block-posts/colcade.js?ver=1659359007' id='colcade-js' defer></script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/canvas/components/posts/block-posts/public-block-posts.js?ver=1659359007' id='canvas-block-posts-script-js' defer></script>
+<script src='https://devopscube.com/wp-content/plugins/canvas/components/justified-gallery/block/jquery.justifiedGallery.min.js?ver=2.3.8' id='justifiedgallery-js' defer></script>
+<script id='canvas-justified-gallery-js-extra'>
+var canvasJG = {"rtl":""};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/canvas/components/justified-gallery/block/public-block-justified-gallery.js?ver=1659359007' id='canvas-justified-gallery-js' defer></script>
+<script src='https://devopscube.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js' defer></script>
+<script src='https://devopscube.com/wp-content/plugins/canvas/components/slider-gallery/block/flickity.pkgd.min.js?ver=2.3.8' id='flickity-js' defer></script>
+<script id='canvas-slider-gallery-js-extra'>
+var canvas_sg_flickity = {"page_info_sep":" of "};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/canvas/components/slider-gallery/block/public-block-slider-gallery.js?ver=1659359007' id='canvas-slider-gallery-js' defer></script>
+<script id='convertkit-broadcasts-js-extra'>
+var convertkit_broadcasts = {"ajax_url":"https:\/\/devopscube.com\/wp-admin\/admin-ajax.php","action":"convertkit_broadcasts_render","debug":""};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/convertkit/resources/frontend/js/broadcasts.js?ver=1659359007' id='convertkit-broadcasts-js' defer></script>
+<script src='https://devopscube.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js' defer></script>
+<script src='https://devopscube.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script id='contact-form-7-js-extra'>
+var wpcf7 = {"api":{"root":"https:\/\/devopscube.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1659359007' id='contact-form-7-js' defer></script>
+<script id='convertkit-js-js-extra'>
+var convertkit = {"ajaxurl":"https:\/\/devopscube.com\/wp-admin\/admin-ajax.php","debug":"","nonce":"8335f6bb1b","subscriber_id":"0","tag":"","post_id":"13178"};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/convertkit/resources/frontend/js/convertkit.js?ver=1659359007' id='convertkit-js-js' defer></script>
+<script id='eafl-public-js-extra'>
+var eafl_public = {"home_url":"https:\/\/devopscube.com\/","ajax_url":"https:\/\/devopscube.com\/wp-admin\/admin-ajax.php","nonce":"352338ed4a"};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/easy-affiliate-links/dist/public.js?ver=1659359007' id='eafl-public-js' defer></script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/basic-elements/public/js/public-powerkit-basic-elements.js?ver=1659359007' id='powerkit-basic-elements-js' defer></script>
+<script src='https://devopscube.com/wp-content/plugins/powerkit/modules/lightbox/public/js/glightbox.min.js?ver=2.7.8' id='glightbox-js' defer></script>
+<script id='powerkit-lightbox-js-extra'>
+var powerkit_lightbox_localize = {"text_previous":"Previous","text_next":"Next","text_close":"Close","text_loading":"Loading","text_counter":"of","single_image_selectors":".entry-content img,.single .post-media img","gallery_selectors":".wp-block-gallery,.gallery","exclude_selectors":"","zoom_icon":"1"};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/lightbox/public/js/public-powerkit-lightbox.js?ver=1659359007' id='powerkit-lightbox-js' defer></script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/scroll-to-top/public/js/public-powerkit-scroll-to-top.js?ver=1659359007' id='powerkit-scroll-to-top-js' defer></script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/share-buttons/public/js/public-powerkit-share-buttons.js?ver=1659359007' id='powerkit-share-buttons-js' defer></script>
+<script id='powerkit-table-of-contents-js-extra'>
+var powerkit_toc_config = {"label_show":"Show","label_hide":"Hide"};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/table-of-contents/public/js/public-powerkit-table-of-contents.js?ver=1659359007' id='powerkit-table-of-contents-js' defer></script>
+<script id='ppress-frontend-script-js-extra'>
+var pp_ajax_form = {"ajaxurl":"https:\/\/devopscube.com\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"c45228fe9e","disable_ajax_form":"false","is_checkout":"0","is_checkout_tax_enabled":"0"};
+</script>
+<script src='https://devopscube.com/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.0.2' id='ppress-frontend-script-js' defer></script>
+<script id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id='rocket-preload-links-js-extra'>
+var RocketPreloadLinksConfig = {"excludeUris":"\/black-friday-deals\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/jayden\/|\/wp-admin\/|\/logout\/|\/jayden\/|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/devopscube.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script src='https://devopscube.com/wp-content/themes/squaretype/js/ofi.min.js?ver=3.2.3' id='object-fit-images-js' defer></script>
+<script id='csco-scripts-js-extra'>
+var csco_mega_menu = {"rest_url":"https:\/\/devopscube.com\/wp-json\/csco\/v1\/menu-posts"};
+</script>
+<script data-minify="1" src='https://devopscube.com/wp-content/cache/min/1/wp-content/themes/squaretype/js/scripts.js?ver=1659359007' id='csco-scripts-js' defer></script>
+<script src='https://devopscube.com/wp-includes/js/comment-reply.min.js?ver=6.0.1' id='comment-reply-js' defer></script>
+<script data-minify="1" defer src='https://devopscube.com/wp-content/cache/min/1/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1659359013' id='akismet-frontend-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+		"use strict";
+
+		(function($) {
+
+			$( window ).on( 'load', function() {
+
+				// Each All Share boxes.
+				$( '.pk-share-buttons-mode-rest' ).each( function() {
+
+					var powerkitButtonsIds = [],
+						powerkitButtonsBox = $( this );
+
+					// Check Counts.
+					if ( ! powerkitButtonsBox.hasClass( 'pk-share-buttons-has-counts' ) && ! powerkitButtonsBox.hasClass( 'pk-share-buttons-has-total-counts' ) ) {
+						return;
+					}
+
+					powerkitButtonsBox.find( '.pk-share-buttons-item' ).each( function() {
+						if ( $( this ).attr( 'data-id' ).length > 0 ) {
+							powerkitButtonsIds.push( $( this ).attr( 'data-id' ) );
+						}
+					});
+
+					// Generate accounts data.
+					var powerkitButtonsData = {};
+
+					if( powerkitButtonsIds.length > 0 ) {
+						powerkitButtonsData = {
+							'ids'     : powerkitButtonsIds.join(),
+							'post_id' : powerkitButtonsBox.attr( 'data-post-id' ),
+							'url'     : powerkitButtonsBox.attr( 'data-share-url' ),
+						};
+					}
+
+					// Get results by REST API.
+					$.ajax({
+						type: 'GET',
+						url: 'https://devopscube.com/wp-json/social-share/v1/get-shares',
+						data: powerkitButtonsData,
+						beforeSend: function(){
+
+							// Add Loading Class.
+							powerkitButtonsBox.addClass( 'pk-share-buttons-loading' );
+						},
+						success: function( response ) {
+
+							if ( ! $.isEmptyObject( response ) && ! response.hasOwnProperty( 'code' ) ) {
+
+								// Accounts loop.
+								$.each( response, function( index, data ) {
+
+									if ( index !== 'total_count' ) {
+
+										// Find Bsa Item.
+										var powerkitButtonsItem = powerkitButtonsBox.find( '.pk-share-buttons-item[data-id="' + index + '"]');
+
+										// Set Count.
+										if ( data.hasOwnProperty( 'count' ) && data.count  ) {
+
+											powerkitButtonsItem.removeClass( 'pk-share-buttons-no-count' ).addClass( 'pk-share-buttons-item-count' );
+											powerkitButtonsItem.find( '.pk-share-buttons-count' ).html( data.count );
+
+										} else {
+											powerkitButtonsItem.addClass( 'pk-share-buttons-no-count' );
+										}
+									}
+								});
+
+								if ( powerkitButtonsBox.hasClass( 'pk-share-buttons-has-total-counts' ) && response.hasOwnProperty( 'total_count' ) ) {
+									var powerkitButtonsTotalBox = powerkitButtonsBox.find( '.pk-share-buttons-total' );
+
+									if ( response.total_count ) {
+										powerkitButtonsTotalBox.find( '.pk-share-buttons-count' ).html( response.total_count );
+										powerkitButtonsTotalBox.show().removeClass( 'pk-share-buttons-total-no-count' );
+									}
+								}
+							}
+
+							// Remove Loading Class.
+							powerkitButtonsBox.removeClass( 'pk-share-buttons-loading' );
+						},
+						error: function() {
+
+							// Remove Loading Class.
+							powerkitButtonsBox.removeClass( 'pk-share-buttons-loading' );
+						}
+					});
+				});
+			});
+
+		})(jQuery);
+	});</script>
+<script src='https://stats.wp.com/e-202231.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.1.2',blog:'78277409',post:'13178',tz:'0',srv:'devopscube.com'} ]);
+	_stq.push([ 'clickTrackerInit', '78277409', '13178' ]);
+</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://devopscube.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script><script>"use strict";function wprRemoveCPCSS(){var preload_stylesheets=document.querySelectorAll('link[data-rocket-async="style"][rel="preload"]');if(preload_stylesheets&&0<preload_stylesheets.length)for(var stylesheet_index=0;stylesheet_index<preload_stylesheets.length;stylesheet_index++){var media=preload_stylesheets[stylesheet_index].getAttribute("media")||"all";if(window.matchMedia(media).matches)return void setTimeout(wprRemoveCPCSS,200)}var elem=document.getElementById("rocket-critical-css");elem&&"remove"in elem&&elem.remove()}window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script><noscript><link rel="stylesheet" href="https://devopscube.com/wp-content/cache/min/1/404f45a6ec3df42f28c79c6d4a603d2f.css" media="all" data-minify="1" /></noscript><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7347bd355aedbba9","version":"2022.6.0","r":1,"token":"dc028f26695a4e8f93561a058885fee0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
