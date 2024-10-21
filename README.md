@@ -1,3 +1,17 @@
+# This repository contains all the Kubernetes YAML files needed for testing in your lab environment. It includes various scenarios for you to try out, such as Ingress, Volumes, ConfigMaps, NodePort, Headless services, and more
+
+# Deployment Strategy
+
+# K8s Env variables
+
+# ConfigMAP
+
+# External-Load balancer Service
+
+# Headless Service
+
+
+
 # my-k8s-ingress-demo-code 
 
 To complete the Demo of Ingress and ingress rules, Attched are the yaml files that can be used to deploy pods, service, Imgress controller(Nginx) and Ingress Rules.
