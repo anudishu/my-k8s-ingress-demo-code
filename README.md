@@ -1,3 +1,8 @@
+
+![Uploading image.png…]()
+
+
+
 # This repository contains all the Kubernetes YAML files needed for testing in your lab environment. It includes various scenarios for you to try out, such as Ingress, Volumes, ConfigMaps, NodePort, Headless services, and more
 
 # Deployment Strategy
